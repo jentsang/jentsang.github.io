@@ -1,14 +1,15 @@
 ---
-title: "Jennifer Tsang's website"
-#from: markdown+emoji
+title: "👋 Hi, it's Jennifer! "
 ---
 
-👋 Hi, I’m Jennifer Tsang! Nice to meet you! 
-I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between engineering and data science.
+My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between engineering and data science.
 
-Contact Me -> insert link
+![Profile_picture](img/profilephoto.png){width=300}
 
+[Contact Me](https://www.linkedin.com/in/jennifertsang8919/)
 
 About Me
+
 ...
+
 To learn more about Jennifer, click the About tab. 
