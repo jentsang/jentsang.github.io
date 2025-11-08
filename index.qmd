@@ -34,24 +34,23 @@ My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical
 ## Experience
 <h5>Cognitive Neuroscience of Schizophrenia Lab</h5>
 
-<small class="text-body-secondary">BC Children’s Hospital Research Institute</small>
+<p class="text-body-secondary">BC Children’s Hospital Research Institute</p>
 
 <span class="text-info">Research Assistant</span> | May 2024 - September 2025
 
 Process, analyze, and visualize fMRI brain images using statistical and machine learning algorithms. 
 
-<p><small>*Skills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing*</p>
+<small class="text-body-secondary">*Skills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing*</small>
 
 <h5>Computational Ophthalmic Imaging Lab</h5>
 
-<small class="text-body-secondary">Eye Care Centre, Vancouver General Hospital</small>
+<p class="text-body-secondary">Eye Care Centre, Vancouver General Hospital</p>
 
 <span class="text-info">Research Assistant</span> | October 2024 - April 2025
 
-
 Apply multi-volume registration and coefficient of variance (CoV) to quantify retinal capillary perfusion on optical coherence tomography angiography (OCTA) data.
 
-<p><small>*Skills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review*</p>
+<small class="text-body-secondary">*Skills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review*</small>
 
 ## Publication
 
