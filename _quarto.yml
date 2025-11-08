@@ -3,18 +3,28 @@ project:
   output-dir: docs
 
 website:
-  title: "Jennifer Tsang's website"
+  back-to-top-navigation: true
+  page-footer: "Copyright 2025, Jennifer Tsang"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - text: "Home"
+        href: index.qmd
       - about.qmd
+    tools:
+      - icon: github
+        icon-pack: fab
+        href: https://github.com/jentsang
+      - icon: linkedin
+        icon-pack: fab
+        href: https://www.linkedin.com/in/jennifertsang8919/
 
 format:
   html:
+    # toggle the color scheme based on the user's preference
+    respect-user-color-scheme: true
     theme:
-      - cosmo
-      - brand
+      light: lux
+      dark: vapor
     css: styles.css
     toc: true
 

@@ -1,7 +1,9 @@
 ---
-title: "About"
+title: "Projects"
+listing: 
+  contents: posts
+  type: grid
+  sort: "date"
 ---
 
-This website is about Jennifer Tsang. 
-
-Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia.
+Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below! 
