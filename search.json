@@ -2,15 +2,50 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Projects",
     "section": "",
-    "text": "This website is about Jennifer Tsang.\nJennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia."
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\nProject 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "posts/project2.html",
+    "href": "posts/project2.html",
+    "title": "Project 2",
+    "section": "",
+    "text": "Testing for adding a second project to the Projects page.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/project1.html",
+    "href": "posts/project1.html",
+    "title": "Project 1",
+    "section": "",
+    "text": "Testing for adding a project to the Projects page.\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "👋 Hi, it’s Jennifer!",
     "section": "",
-    "text": "My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between engineering and data science.\n\n\n\nProfile_picture\n\n\nContact Me\nAbout Me\n…\nTo learn more about Jennifer, click the About tab."
+    "text": "My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "👋 Hi, it’s Jennifer!",
+    "section": "Education",
+    "text": "Education\n\nUniversity of British Columbia\n\nVancouver, BC\nMasters in Data Science | 2025 - 2026\n\nUniversity of British Columbia\n\nVancouver, BC\nBachelor of Applied Science in Biomedical Engineering | 2018 - 2023"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "👋 Hi, it’s Jennifer!",
+    "section": "Experience",
+    "text": "Experience\n\nCognitive Neuroscience of Schizophrenia Lab\n\ns BC Children’s Hospital Research Institute\nResearch Assistant | May 2024 - September 2025\nProcess, analyze, and visualize fMRI brain images using statistical and machine learning algorithms.\nSkills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing\n\nComputational Ophthalmic Imaging Lab\n\nEye Care Centre, Vancouver General Hospital\nResearch Assistant | October 2024 - April 2025\nApply multi-volume registration and coefficient of variance (CoV) to quantify retinal capillary perfusion on optical coherence tomography angiography (OCTA) data.\nSkills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review"
+  },
+  {
+    "objectID": "index.html#publication",
+    "href": "index.html#publication",
+    "title": "👋 Hi, it’s Jennifer!",
+    "section": "Publication",
+    "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
   }
 ]
