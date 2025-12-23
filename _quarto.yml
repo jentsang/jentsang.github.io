@@ -10,6 +10,8 @@ website:
       - text: "Home"
         href: index.qmd
       - about.qmd
+      - projects.qmd
+      - recipes.qmd
     tools:
       - icon: github
         icon-pack: fab
@@ -27,6 +29,3 @@ format:
       dark: vapor
     css: styles.css
     toc: true
-
-
-

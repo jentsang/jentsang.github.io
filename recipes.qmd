@@ -1,0 +1,9 @@
+---
+title: "Recipes"
+listing: 
+  contents: recipes
+  type: grid
+  sort: "date"
+---
+
+Here are Jennifer's recipes!

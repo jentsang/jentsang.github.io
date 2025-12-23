@@ -2,9 +2,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "Projects",
+    "title": "About",
     "section": "",
-    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\nProject 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "My name is Jennifer Tsang, nice to meet you!\nI hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia.\nMy interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
   },
   {
     "objectID": "posts/project2.html",
@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "👋 Hi, it’s Jennifer!",
     "section": "",
-    "text": "My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
+    "text": "Back to top"
   },
   {
     "objectID": "index.html#education",
@@ -47,5 +47,61 @@
     "title": "👋 Hi, it’s Jennifer!",
     "section": "Publication",
     "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
+  },
+  {
+    "objectID": "recipes/recipe1.html",
+    "href": "recipes/recipe1.html",
+    "title": "Recipe 1",
+    "section": "",
+    "text": "Testing for adding a recipe to the Recipes page.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\nProject 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProject 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "recipes.html",
+    "href": "recipes.html",
+    "title": "Recipes",
+    "section": "",
+    "text": "Here are Jennifer’s recipes!\n\n\n\n\n\n\n\n\n\n\n\n\nRecipe 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nUniversity of British Columbia\n\nVancouver, BC\nM.Sc. in Data Science | 2025 - 2026\n\nUniversity of British Columbia\n\nVancouver, BC\nB.A.Sc. in Biomedical Engineering | 2018 - 2023"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n\nCognitive Neuroscience of Schizophrenia Lab\n\n\nBC Children’s Hospital Research Institute\n\nResearch Assistant | May 2024 - September 2025\nProcess, analyze, and visualize fMRI brain images using statistical and machine learning algorithms.\nSkills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing\n\nComputational Ophthalmic Imaging Lab\n\n\nEye Care Centre, Vancouver General Hospital\n\nResearch Assistant | October 2024 - April 2025\nApply multi-volume registration and coefficient of variance (CoV) to quantify retinal capillary perfusion on optical coherence tomography angiography (OCTA) data.\nSkills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review"
+  },
+  {
+    "objectID": "about.html#publication",
+    "href": "about.html#publication",
+    "title": "About",
+    "section": "Publication",
+    "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
+  },
+  {
+    "objectID": "about.html#hi-its-jennifer",
+    "href": "about.html#hi-its-jennifer",
+    "title": "About",
+    "section": "",
+    "text": "My name is Jennifer Tsang, nice to meet you! I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. My interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
+  },
+  {
+    "objectID": "index.html#hi-its-jennifer",
+    "href": "index.html#hi-its-jennifer",
+    "title": "Home",
+    "section": "👋 Hi, it’s Jennifer!",
+    "text": "👋 Hi, it’s Jennifer!"
   }
 ]
