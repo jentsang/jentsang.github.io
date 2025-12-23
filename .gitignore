@@ -1,1 +1,14 @@
 /.quarto/
+
+# OS generated files
+.DS_Store
+**/ .DS_Store
+
+# R language files
+.Rhistory
+.RData
+.Ruserdata
+
+# Web / SEO files 
+docs/robots.txt
+docs/sitemap.xml
