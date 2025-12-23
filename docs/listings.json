@@ -1,16 +1,16 @@
 [
   {
+    "listing": "/recipes.html",
+    "items": [
+      "/recipe_list/recipe1.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/project_list/credit-card-default-classfication.html",
       "/project_list/hotdog_predictor.html",
       "/project_list/bean_and_brew.html"
-    ]
-  },
-  {
-    "listing": "/recipes.html",
-    "items": [
-      "/recipe_list/recipe1.html"
     ]
   }
 ]

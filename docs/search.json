@@ -28,32 +28,11 @@
     "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
   },
   {
-    "objectID": "project_list/hotdog_predictor.html",
-    "href": "project_list/hotdog_predictor.html",
-    "title": "Hotdog Predictor",
+    "objectID": "project_list/credit-card-default-classfication.html",
+    "href": "project_list/credit-card-default-classfication.html",
+    "title": "Predicting Credit Card Defaults",
     "section": "",
-    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.\nView Repository\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "recipes.html",
-    "href": "recipes.html",
-    "title": "Recipes",
-    "section": "",
-    "text": "Here are Jennifer’s recipes!\n\n\n\n\n\n\n\n\n\n\n\n\nRecipe 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "recipe_list/recipe1.html",
-    "href": "recipe_list/recipe1.html",
-    "title": "Recipe 1",
-    "section": "",
-    "text": "Testing for adding a recipe to the Recipes page.\n\n\n\n Back to top"
+    "text": "Overview\nFinancial institutions rely on accurate risk assessment to maintain stability. Using the UCI Default of Credit Card Clients Dataset, this project aims to predict the likelihood of a client defaulting on their payments. After comparing multiple machine learning architectures, our Gradient Boosted Decision Tree emerged as the best model with a test accuracy of 82%.\n\n\n\nFeature Engineering & Selection\nTo better capture user behavior, I engineered a feature called Credit Utilization Ratio, that is calculated by amount of bill statement in a month divided by the amount of given credit (\\(\\frac{BILL\\_AMT}{LIMIT\\_BAL}\\)). This metric represents the proportion of a client’s credit limit currently in use, an indicator of financial stress.\nExperimented with Recursive feature elimination with cross-validation (RFECV) and Sequential Forward Selection (SFS) backward to select the best features.\nTo optimize the model’s performance and reduce noise, I implemented:\n\nRecursive feature elimination with cross-validation (RFECV)\nSequential Forward Selection (SFS) backward\n\nto identify the most predictive subset of features.\n\n\nModel Implementation\nWe benchmarked four distinct classification algorithms to find the optimal balance between bias and variance:\n\nLogistic Regression from sklearn.linear_model import LogisticRegression\nDecision Tree from sklearn.tree import DecisionTreeClassifier\nRandom Forest from sklearn.ensemble import RandomForestClassifier\nGradient Boosted Decision Tree from xgboost import XGBClassifier\n\n\n\nHyperparameter Optimization\nTo maximize performance, I used RandomizedSearchCV for hyperparameter optimization, focusing on tree depth, learning rate, and estimator counts for the ensemble models.\n\n\nModel Interpretation (SHAP)\nBeyond just predicting “yes” or “no,” we focused on explainability. Using TreeExplainer from the SHAP library, we generated Waterfall and Beeswarm plots to visualize exactly how features like payment history and credit utilization influenced the model’s final decision.\n\n\n\nReflection\nThis project allowed me to explore the full machine learning lifecycle, from raw data manipulation to complex model interpretation.\n\n\nCredit\nCollaborator: Built with Nicole Link. View Respository\n\n\n\n\n Back to top"
   },
   {
     "objectID": "project_list/bean_and_brew.html",
@@ -63,17 +42,38 @@
     "text": "Impact & Results\nOur team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.\n\n\nThe Challenge\n\nAnalyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.\nTrying to strike the balance between environmental protection and profit generation.\n\n\n\nWhat we did\n\nData set cleaning & joining: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction\nEDA: visualize financial and environmental performance before/after Nov 2023\nStatistical analysis: z-test\nSimple modeling: Logistic Regression\n\nView Repository\n\n\n\n\n Back to top"
   },
   {
+    "objectID": "recipe_list/recipe1.html",
+    "href": "recipe_list/recipe1.html",
+    "title": "Recipe 1",
+    "section": "",
+    "text": "Testing for adding a recipe to the Recipes page.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "recipes.html",
+    "href": "recipes.html",
+    "title": "Recipes",
+    "section": "",
+    "text": "Here are Jennifer’s recipes!\n\n\n\n\n\n\n\n\n\n\n\n\nRecipe 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "project_list/hotdog_predictor.html",
+    "href": "project_list/hotdog_predictor.html",
+    "title": "Hotdog Predictor",
+    "section": "",
+    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.\nView Repository\n\n\n\n Back to top"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "👋 Hi, it’s Jennifer!",
     "section": "",
     "text": "Back to top"
-  },
-  {
-    "objectID": "project_list/credit-card-default-classfication.html",
-    "href": "project_list/credit-card-default-classfication.html",
-    "title": "Predicting Credit Card Defaults",
-    "section": "",
-    "text": "Overview\nFinancial institutions rely on accurate risk assessment to maintain stability. Using the UCI Default of Credit Card Clients Dataset, this project aims to predict the likelihood of a client defaulting on their payments. After comparing multiple machine learning architectures, our Gradient Boosted Decision Tree emerged as the best model with a test accuracy of 82%.\n\n\n\nFeature Engineering & Selection\nTo better capture user behavior, I engineered a feature called Credit Utilization Ratio, that is calculated by amount of bill statement in a month divided by the amount of given credit (\\(\\frac{BILL\\_AMT}{LIMIT\\_BAL}\\)). This metric represents the proportion of a client’s credit limit currently in use, an indicator of financial stress.\nExperimented with Recursive feature elimination with cross-validation (RFECV) and Sequential Forward Selection (SFS) backward to select the best features.\nTo optimize the model’s performance and reduce noise, I implemented:\n\nRecursive feature elimination with cross-validation (RFECV)\nSequential Forward Selection (SFS) backward\n\nto identify the most predictive subset of features.\n\n\nModel Implementation\nWe benchmarked four distinct classification algorithms to find the optimal balance between bias and variance:\n\nLogistic Regression from sklearn.linear_model import LogisticRegression\nDecision Tree from sklearn.tree import DecisionTreeClassifier\nRandom Forest from sklearn.ensemble import RandomForestClassifier\nGradient Boosted Decision Tree from xgboost import XGBClassifier\n\n\n\nHyperparameter Optimization\nTo maximize performance, I used RandomizedSearchCV for hyperparameter optimization, focusing on tree depth, learning rate, and estimator counts for the ensemble models.\n\n\nModel Interpretation (SHAP)\nBeyond just predicting “yes” or “no,” we focused on explainability. Using TreeExplainer from the SHAP library, we generated Waterfall and Beeswarm plots to visualize exactly how features like payment history and credit utilization influenced the model’s final decision.\n\n\n\nReflection\nThis project allowed me to explore the full machine learning lifecycle, from raw data manipulation to complex model interpretation.\n\n\nCredit\nCollaborator: Built with Nicole Link. \n\n\n\n\n Back to top"
   }
 ]
