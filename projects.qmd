@@ -1,9 +1,10 @@
 ---
 title: "Projects"
 listing: 
-  contents: posts
+  contents: project_list
   type: grid
   sort: "date"
+  fields: [image, title, subtitle, author, date]
 ---
 
 Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below! 

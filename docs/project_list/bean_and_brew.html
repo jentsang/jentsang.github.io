@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-11-22">
 
-<title>Project 2</title>
+<title>Bean and Brew</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -265,7 +266,15 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../recipes.html"> 
+<span class="menu-text">Recipes</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -281,8 +290,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
+  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -290,7 +307,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project 2</h1>
+<h1 class="title">Bean and Brew</h1>
+<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
 </div>
 
 
@@ -298,6 +316,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 22, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -307,9 +331,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Testing for adding a second project to the Projects page.</p>
+<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
+<section id="impact-results" class="level1">
+<h1>Impact &amp; Results</h1>
+<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
+</section>
+<section id="the-challenge" class="level1">
+<h1>The Challenge</h1>
+<ul>
+<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
+<li>Trying to strike the balance between environmental protection and profit generation.</li>
+</ul>
+</section>
+<section id="what-we-did" class="level1">
+<h1>What we did</h1>
+<ul>
+<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
+<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
+<li><p><strong>Statistical analysis</strong>: z-test</p></li>
+<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
+</ul>
+<p><a href="https://github.com/jentsang/bean-and-brew">Repository</a></p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -397,7 +442,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/jentsang\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-author','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -382,39 +382,49 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1762560623133" data-listing-reading-time-sort="1" data-listing-word-count-sort="10">
-<a href="./posts/project1.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1763798400000" data-listing-file-modified-sort="1766524871017" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
+<a href="./project_list/bean_and_brew.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./img/projects/coffee_and_bean.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Project 1
+Bean and Brew
 </h5>
-<div class="card-text listing-description delink">
-Testing for adding a project to the Projects page.
+<div class="card-subtitle listing-subtitle">
+A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon
 </div>
-<div class="card-attribution card-text-small start">
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
+</div>
+<div class="listing-date">
+Nov 22, 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1762560775801" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<a href="./posts/project2.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1765094400000" data-listing-file-modified-sort="1766524079116" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="87">
+<a href="./project_list/hotdog_predictor.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
+<p class="card-img-top">
+<img loading="lazy" src="./img/projects/food-truck-landing.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Project 2
+Hotdog Predictor
 </h5>
-<div class="card-text listing-description delink">
-Testing for adding a second project to the Projects page.
+<div class="card-subtitle listing-subtitle">
+Predicting hotdog vendors through NLP and classification
 </div>
-<div class="card-attribution card-text-small start">
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
+</div>
+<div class="listing-date">
+Dec 7, 2025
 </div>
 </div>
 </div>

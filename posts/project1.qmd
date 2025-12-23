@@ -1,5 +1,0 @@
----
-title: "Project 1"
----
-
-Testing for adding a project to the Projects page. 

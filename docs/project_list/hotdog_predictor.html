@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2025-12-07">
 
-<title>Recipe 1</title>
+<title>Hotdog Predictor</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -261,6 +262,10 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -294,7 +299,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Recipe 1</h1>
+<h1 class="title">Hotdog Predictor</h1>
+<p class="subtitle lead">Predicting hotdog vendors through NLP and classification</p>
 </div>
 
 
@@ -302,6 +308,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 7, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -311,7 +323,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Testing for adding a recipe to the Recipes page.</p>
+<p><img src="../img/projects/food-truck-landing.jpg" class="img-fluid"></p>
+<p>Can a business name reveal what’s on the menu? This project explores text-based classification using the <a href="https://opendata.vancouver.ca/explore/dataset/food-vendors/table/">City of Vancouver’s Street Food Vending dataset</a>.</p>
+<p>I engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.</p>
+<p><a href="https://github.com/jentsang/hotdog-predictor">Repository</a></p>
 
 
 

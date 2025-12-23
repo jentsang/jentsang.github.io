@@ -1,0 +1,26 @@
+---
+title: "Bean and Brew"
+subtitle: "A statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon"
+date: "2025-11-22"
+image: /img/projects/coffee_and_bean.jpg
+---
+
+![](/img/projects/coffee_and_bean.jpg)
+
+# Impact & Results
+Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.
+
+# The Challenge
+- Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.
+- Trying to strike the balance between environmental protection and profit generation.
+
+# What we did
+- **Data set cleaning & joining**: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction
+
+- **EDA**: visualize financial and environmental performance before/after Nov 2023
+
+- **Statistical analysis**: z-test
+
+- **Simple modeling**: Logistic Regression
+
+[Repository](https://github.com/jentsang/bean-and-brew)

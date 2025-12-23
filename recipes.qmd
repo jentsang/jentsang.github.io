@@ -1,7 +1,8 @@
 ---
 title: "Recipes"
 listing: 
-  contents: recipes
+  contents: recipe_list
+  categories: true
   type: grid
   sort: "date"
 ---
