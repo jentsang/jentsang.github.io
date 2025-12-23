@@ -1,2 +1,1 @@
-# jentsang.github.io
-Creating a personal website for DSCI 521 Lab 2.
+Creating a personal website to display my projects and share my recipes :)
