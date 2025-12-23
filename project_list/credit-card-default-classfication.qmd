@@ -46,8 +46,10 @@ Beyond just predicting "yes" or "no," we focused on explainability. Using `TreeE
 ---
 
 # Reflection 
-This project allowed me to explore the full machine learning lifecycle, from raw data manipulation to complex model interpretation.
+This was a very fun project to explore and compare the performance of different machine learning models.
 
-# Credit
+
+## Credit
 Collaborator: Built with Nicole Link.
+
 [View Respository](https://github.com/jentsang/credit-card-default)
