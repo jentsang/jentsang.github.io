@@ -11,4 +11,4 @@ Can a business name reveal what’s on the menu? This project explores text-base
 
 I engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.
 
-[Repository](https://github.com/jentsang/hotdog-predictor)
+[View Repository](https://github.com/jentsang/hotdog-predictor)

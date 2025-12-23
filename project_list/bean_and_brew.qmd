@@ -23,4 +23,4 @@ Our team was awarded Second Place for our ability to translate these statistical
 
 - **Simple modeling**: Logistic Regression
 
-[Repository](https://github.com/jentsang/bean-and-brew)
+[View Repository](https://github.com/jentsang/bean-and-brew)

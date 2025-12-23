@@ -1,0 +1,53 @@
+---
+title: "Predicting Credit Card Defaults"
+subtitle: "Risk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability"
+date: "2025-12-12"
+image: /img/projects/credit-card-default.jpg
+---
+
+![](/img/projects/credit-card-default.jpg)
+
+# Overview
+Financial institutions rely on accurate risk assessment to maintain stability. Using the [UCI Default of Credit Card Clients Dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset), this project aims to predict the likelihood of a client defaulting on their payments. After comparing multiple machine learning architectures, our **Gradient Boosted Decision Tree** emerged as the best model with a **test accuracy of 82%**.
+
+---
+
+# Feature Engineering & Selection 
+To better capture user behavior, I engineered a feature called Credit Utilization Ratio, that is calculated by amount of bill statement in a month divided by the amount of given credit ($\frac{BILL\_AMT}{LIMIT\_BAL}$). This metric represents the proportion of a client's credit limit currently in use, an indicator of financial stress. 
+
+Experimented with Recursive feature elimination with cross-validation (RFECV) and Sequential Forward Selection (SFS) backward to select the best features. 
+
+To optimize the model's performance and reduce noise, I implemented:
+
+- Recursive feature elimination with cross-validation (RFECV)
+- Sequential Forward Selection (SFS) backward 
+
+to identify the most predictive subset of features.
+
+
+# Model Implementation
+We benchmarked four distinct classification algorithms to find the optimal balance between bias and variance:
+
+1. Logistic Regression `from sklearn.linear_model import LogisticRegression`
+
+2. Decision Tree `from sklearn.tree import DecisionTreeClassifier`
+
+3. Random Forest `from sklearn.ensemble import RandomForestClassifier`
+
+4. Gradient Boosted Decision Tree `from xgboost import XGBClassifier`
+
+
+# Hyperparameter Optimization
+To maximize performance, I used `RandomizedSearchCV` for hyperparameter optimization, focusing on tree depth, learning rate, and estimator counts for the ensemble models.
+
+# Model Interpretation (SHAP)
+Beyond just predicting "yes" or "no," we focused on explainability. Using `TreeExplainer` from the SHAP library, we generated Waterfall and Beeswarm plots to visualize exactly how features like payment history and credit utilization influenced the model's final decision.
+
+---
+
+# Reflection 
+This project allowed me to explore the full machine learning lifecycle, from raw data manipulation to complex model interpretation.
+
+# Credit
+Collaborator: Built with Nicole Link.
+[View Respository](https://github.com/jentsang/credit-card-default)

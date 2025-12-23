@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-07">
+<meta name="dcterms.date" content="2025-12-12">
 
-<title>Hotdog Predictor</title>
+<title>Predicting Credit Card Defaults</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -290,8 +319,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#feature-engineering-selection" id="toc-feature-engineering-selection" class="nav-link" data-scroll-target="#feature-engineering-selection">Feature Engineering &amp; Selection</a></li>
+  <li><a href="#model-implementation" id="toc-model-implementation" class="nav-link" data-scroll-target="#model-implementation">Model Implementation</a></li>
+  <li><a href="#hyperparameter-optimization" id="toc-hyperparameter-optimization" class="nav-link" data-scroll-target="#hyperparameter-optimization">Hyperparameter Optimization</a></li>
+  <li><a href="#model-interpretation-shap" id="toc-model-interpretation-shap" class="nav-link" data-scroll-target="#model-interpretation-shap">Model Interpretation (SHAP)</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -299,8 +340,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hotdog Predictor</h1>
-<p class="subtitle lead">Predicting hotdog vendors through NLP and classification</p>
+<h1 class="title">Predicting Credit Card Defaults</h1>
+<p class="subtitle lead">Risk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability</p>
 </div>
 
 
@@ -311,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 7, 2025</p>
+      <p class="date">December 12, 2025</p>
     </div>
   </div>
   
@@ -323,12 +364,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/food-truck-landing.jpg" class="img-fluid"></p>
-<p>Can a business name reveal what’s on the menu? This project explores text-based classification using the <a href="https://opendata.vancouver.ca/explore/dataset/food-vendors/table/">City of Vancouver’s Street Food Vending dataset</a>.</p>
-<p>I engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.</p>
-<p><a href="https://github.com/jentsang/hotdog-predictor">View Repository</a></p>
+<p><img src="../img/projects/credit-card-default.jpg" class="img-fluid"></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>Financial institutions rely on accurate risk assessment to maintain stability. Using the <a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">UCI Default of Credit Card Clients Dataset</a>, this project aims to predict the likelihood of a client defaulting on their payments. After comparing multiple machine learning architectures, our <strong>Gradient Boosted Decision Tree</strong> emerged as the best model with a <strong>test accuracy of 82%</strong>.</p>
+<hr>
+</section>
+<section id="feature-engineering-selection" class="level1">
+<h1>Feature Engineering &amp; Selection</h1>
+<p>To better capture user behavior, I engineered a feature called Credit Utilization Ratio, that is calculated by amount of bill statement in a month divided by the amount of given credit (<span class="math inline">\(\frac{BILL\_AMT}{LIMIT\_BAL}\)</span>). This metric represents the proportion of a client’s credit limit currently in use, an indicator of financial stress.</p>
+<p>Experimented with Recursive feature elimination with cross-validation (RFECV) and Sequential Forward Selection (SFS) backward to select the best features.</p>
+<p>To optimize the model’s performance and reduce noise, I implemented:</p>
+<ul>
+<li>Recursive feature elimination with cross-validation (RFECV)</li>
+<li>Sequential Forward Selection (SFS) backward</li>
+</ul>
+<p>to identify the most predictive subset of features.</p>
+</section>
+<section id="model-implementation" class="level1">
+<h1>Model Implementation</h1>
+<p>We benchmarked four distinct classification algorithms to find the optimal balance between bias and variance:</p>
+<ol type="1">
+<li><p>Logistic Regression <code>from sklearn.linear_model import LogisticRegression</code></p></li>
+<li><p>Decision Tree <code>from sklearn.tree import DecisionTreeClassifier</code></p></li>
+<li><p>Random Forest <code>from sklearn.ensemble import RandomForestClassifier</code></p></li>
+<li><p>Gradient Boosted Decision Tree <code>from xgboost import XGBClassifier</code></p></li>
+</ol>
+</section>
+<section id="hyperparameter-optimization" class="level1">
+<h1>Hyperparameter Optimization</h1>
+<p>To maximize performance, I used <code>RandomizedSearchCV</code> for hyperparameter optimization, focusing on tree depth, learning rate, and estimator counts for the ensemble models.</p>
+</section>
+<section id="model-interpretation-shap" class="level1">
+<h1>Model Interpretation (SHAP)</h1>
+<p>Beyond just predicting “yes” or “no,” we focused on explainability. Using <code>TreeExplainer</code> from the SHAP library, we generated Waterfall and Beeswarm plots to visualize exactly how features like payment history and credit utilization influenced the model’s final decision.</p>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>This project allowed me to explore the full machine learning lifecycle, from raw data manipulation to complex model interpretation.</p>
+</section>
+<section id="credit" class="level1">
+<h1>Credit</h1>
+<p>Collaborator: Built with Nicole Link. <!-- [View Respository](https://github.com/jentsang/your-repo-link) --></p>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

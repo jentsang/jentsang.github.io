@@ -3,7 +3,7 @@ title: "Projects"
 listing: 
   contents: project_list
   type: grid
-  sort: "date"
+  sort: "date desc"
   fields: [image, title, subtitle, author, date]
 ---
 
