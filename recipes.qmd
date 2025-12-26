@@ -1,10 +1,25 @@
 ---
 title: "Recipes"
+title-block-banner: img/TGCBS_Jennifer.jpg
+title-block-banner-color: "white"
 listing: 
   contents: recipe_list
   categories: true
   type: grid
-  sort: "date"
+  sort: "date desc"
+  fields: [image, title, subtitle, date]
 ---
 
-Here are Jennifer's recipes!
+<style>
+  .quarto-title-block .quarto-title-banner {
+    height: 350px; /* Adjust this value to your liking */
+    background-size: cover;
+    background-position: center;
+  }
+</style>
+
+Aside from data science and sports, I love to cook and bake. I am thrilled to share that I was a contestant on <span class="text-primary-emphasis">The Great Canadian Baking Show Season 9</span>! 
+
+You can read my [official baker bio here](https://www.cbc.ca/life/greatcanadianbakingshow/bakers/jennifer-tsang-gcbs-baker-bio-1.7624553) or watch the season for free on [CBC Gem](https://gem.cbc.ca/the-great-canadian-baking-show/s09). 
+
+Explore some of my favourite original recipes below:

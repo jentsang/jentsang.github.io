@@ -1,0 +1,60 @@
+---
+title: "Matcha Wreath Babka"
+subtitle: "A vibrant, earthy twist on the classic festive bread"
+categories: [Festive, Bread]
+date: "2025-12-25"
+image: /img/recipes/matcha_babka.jpg
+---
+
+![Matcha babka wreath for my Christmas brunch.](/img/recipes/matcha_babka.jpg)
+
+This Christmas, I decided to depart from the traditional rich chocolate babka and experiment with something more vibrant. Inspired by [Sherry’s Chocolate Babka](https://www.youtube.com/watch?v=nS2SGVVri68), this version swaps out cocoa for matcha, resulting in a beautifully braided wreath with a striking green interior and a sophisticated, earthy sweetness.
+
+---
+
+### Time 
+<span class="text-warning">4 hours</span>
+
+---
+
+### Ingredients
+
+#### The Brioche Dough
+* 75g Whole Eggs (save the leftover egg for egg wash)
+* 18g Egg Yolk 
+* 81g Cold Milk   
+* 81g Cold Water 
+* 193g Bread Flour  
+* 193g All-Purpose Flour
+* 6g Salt
+* 11g Milk Powder  
+* 51g Sugar    
+* 1g Matcha power  
+* 6g Instant Yeast 
+* 77g Unsalted Butter (soften)
+
+#### Matcha Filling
+* 39g Unsalted Butter  
+* 95g White Chocolate 
+* 33g Sugar 
+* 13g Matcha Powder
+
+---
+
+### Instructions
+
+1. In a standmixer bowl with dough attachment, add in <span class="text-primary-emphasis">whole eggs, egg yolk, milk, water, bread flour, all purpose flour, salt, milk powder, sugar</span> and <span class="text-primary-emphasis">matcha power</span>. Mix on <span class="text-primary-emphasis">low speed (speed 2)</span> until dough forms.
+2. Add in <span class="text-primary-emphasis">instant yeast</span>. Mix until combined.
+3. Chill dough in fridge for <span class="text-warning">20 minutes.</span> 
+4. Mix on <span class="text-primary-emphasis">medium speed (speed 4)</span> for <span class="text-warning">~5 minutes</span>; look for stretchy dough but not window pane yet.
+5. Add in <span class="text-primary-emphasis">soften butter</span>, mix on <span class="text-primary-emphasis">low speed (speed 2)</span> until butter is incorporated. Then mix on <span class="text-primary-emphasis">medium speed (speed 4)</span> until <span class="text-primary-emphasis">window pane consistency</span> is reached <span class="text-warning">(~5-10 minutes)</span>.
+6. Put dough into a greased bowl; let it proof until <span class="text-primary-emphasis">doubled in size <span class="text-warning">(~1 hour)</span>.
+7. Degas dough and roll out to a <span class="text-success">21x15 inch (53x38cm) rectangle</span>.
+8. Spread <span class="text-primary-emphasis">matcha filling</span> onto the dough evenly. 
+9. Roll up the dough into a log, fairly tightly. 
+10. Cut log down the middle, and braid to form into a <span class="text-primary-emphasis">wreath shape</span>. 
+11. Proof until double in size <span class="text-warning">(~45-60 minutes)</span>. Brush on egg wash before baking.
+12. Preheat the oven to <span class="text-success">350°F / 180°C</span>, bake for <span class="text-warning">25-30 minutes</span> on the middle to lower rack. After about 10 minutes, when the surface is coloured, <span class="text-primary-emphasis">cover with foil</span> to prevent the top from being burnt.
+
+#### Matcha Filling 
+1. Add all ingredients into a bowl and melt over a <span class="text-primary-emphasis">double broiler</span> until paste forms, set aside. Warm it up if paste is too thick and chill in the fridge if the paste is too thin. You want a spreadable consistency.

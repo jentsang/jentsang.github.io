@@ -23,4 +23,17 @@ Our team was awarded Second Place for our ability to translate these statistical
 
 - **Simple modeling**: Logistic Regression
 
+## Credit
+Collaborator: Built with Jessie Liang.
+
 [View Repository](https://github.com/jentsang/bean-and-brew)
+
+
+:::: {.columns}
+::: {.column width="50%"}
+![](/img/projects/coffee_and_bean_pres.jpg)
+:::
+::: {.column width="50%"}
+![](/img/projects/coffee_and_bean_award.jpg)
+:::
+::::

@@ -6,7 +6,7 @@ about:
   links:
     - icon: resume
       text: Resume
-      href: https://docs.google.com/document/d/1pRcbPIH0GjE5Y0i3HBXjchkWFwm4ng3EAxeiqStZvo4/edit?usp=sharing
+      href: https://docs.google.com/document/d/e/2PACX-1vSy6cDIix88DXz8l0XN6WtIPM6jHVT3G26KNtsQpu_6FtrdkhykBJqHXb1jKLxBez11A9-x2E7SCjMd/pub
     - icon: github
       text: Github
       href: https://github.com/jentsang
@@ -14,7 +14,7 @@ about:
 
 My name is Jennifer Tsang, nice to meet you! 
 
-I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia. 
+I hold a Bachelor’s in Biomedical Engineering and am currently pursuing a [Master’s in Data Science at the University of British Columbia](https://masterdatascience.ubc.ca/why-data-science/student-success-stories/jennifer-tsang). 
 
 My interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science.
 

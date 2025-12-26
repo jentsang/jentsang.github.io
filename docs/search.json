@@ -35,39 +35,46 @@
     "text": "Credit\nCollaborator: Built with Nicole Link.\nView Respository"
   },
   {
-    "objectID": "project_list/bean_and_brew.html",
-    "href": "project_list/bean_and_brew.html",
+    "objectID": "project_list/bean_and_brew.html#credit",
+    "href": "project_list/bean_and_brew.html#credit",
     "title": "Bean and Brew",
-    "section": "",
-    "text": "Impact & Results\nOur team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.\n\n\nThe Challenge\n\nAnalyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.\nTrying to strike the balance between environmental protection and profit generation.\n\n\n\nWhat we did\n\nData set cleaning & joining: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction\nEDA: visualize financial and environmental performance before/after Nov 2023\nStatistical analysis: z-test\nSimple modeling: Logistic Regression\n\nView Repository\n\n\n\n\n Back to top"
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Jessie Liang.\nView Repository"
   },
   {
-    "objectID": "recipe_list/recipe1.html",
-    "href": "recipe_list/recipe1.html",
-    "title": "Recipe 1",
+    "objectID": "recipe_list/matcha_babka.html",
+    "href": "recipe_list/matcha_babka.html",
+    "title": "Matcha Wreath Babka",
     "section": "",
-    "text": "Testing for adding a recipe to the Recipes page.\n\n\n\n Back to top"
+    "text": "Matcha babka wreath for my Christmas brunch.\n\n\nThis Christmas, I decided to depart from the traditional rich chocolate babka and experiment with something more vibrant. Inspired by Sherry’s Chocolate Babka, this version swaps out cocoa for matcha, resulting in a beautifully braided wreath with a striking green interior and a sophisticated, earthy sweetness.\n\n\nTime\n4 hours\n\n\n\nIngredients\n\nThe Brioche Dough\n\n75g Whole Eggs (save the leftover egg for egg wash)\n18g Egg Yolk\n81g Cold Milk\n\n81g Cold Water\n193g Bread Flour\n\n193g All-Purpose Flour\n6g Salt\n11g Milk Powder\n\n51g Sugar\n\n1g Matcha power\n\n6g Instant Yeast\n77g Unsalted Butter (soften)\n\n\n\nMatcha Filling\n\n39g Unsalted Butter\n\n95g White Chocolate\n33g Sugar\n13g Matcha Powder\n\n\n\n\n\nInstructions\n\nIn a standmixer bowl with dough attachment, add in whole eggs, egg yolk, milk, water, bread flour, all purpose flour, salt, milk powder, sugar and matcha power. Mix on low speed (speed 2) until dough forms.\nAdd in instant yeast. Mix until combined.\nChill dough in fridge for 20 minutes.\nMix on medium speed (speed 4) for ~5 minutes; look for stretchy dough but not window pane yet.\nAdd in soften butter, mix on low speed (speed 2) until butter is incorporated. Then mix on medium speed (speed 4) until window pane consistency is reached (~5-10 minutes).\nPut dough into a greased bowl; let it proof until doubled in size (~1 hour).\nDegas dough and roll out to a 21x15 inch (53x38cm) rectangle.\nSpread matcha filling onto the dough evenly.\nRoll up the dough into a log, fairly tightly.\nCut log down the middle, and braid to form into a wreath shape.\nProof until double in size (~45-60 minutes). Brush on egg wash before baking.\nPreheat the oven to 350°F / 180°C, bake for 25-30 minutes on the middle to lower rack. After about 10 minutes, when the surface is coloured, cover with foil to prevent the top from being burnt.\n\n\nMatcha Filling\n\nAdd all ingredients into a bowl and melt over a double broiler until paste forms, set aside. Warm it up if paste is too thick and chill in the fridge if the paste is too thin. You want a spreadable consistency.\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "recipes.html",
     "href": "recipes.html",
     "title": "Recipes",
     "section": "",
-    "text": "Here are Jennifer’s recipes!\n\n\n\n\n\n\n\n\n\n\n\n\nRecipe 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Aside from data science and sports, I love to cook and bake. I am thrilled to share that I was a contestant on The Great Canadian Baking Show Season 9!\nYou can read my official baker bio here or watch the season for free on CBC Gem.\nExplore some of my favourite original recipes below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMatcha Wreath Babka\n\n\nA vibrant, earthy twist on the classic festive bread\n\n\n\nDec 25, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "project_list/hotdog_predictor.html",
     "href": "project_list/hotdog_predictor.html",
     "title": "Hotdog Predictor",
     "section": "",
-    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data.\nView Repository\n\n\n\n Back to top"
+    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data."
+  },
+  {
+    "objectID": "project_list/hotdog_predictor.html#credit",
+    "href": "project_list/hotdog_predictor.html#credit",
+    "title": "Hotdog Predictor",
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Zaki Aslam, Hector Palafox Prieto, and Samrawit Mezgebo Tsegay\nView Repository"
   },
   {
     "objectID": "index.html",
