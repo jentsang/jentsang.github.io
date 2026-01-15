@@ -1,0 +1,13 @@
+---
+title: "The Art of Folding"
+subtitle: "Protein folding and AlphaFold"
+categories: [Explanations]
+date: "2026-01-15"
+image: /img/blogs/amino_acid_sequence.png
+---
+
+# Here is my blog! 
+
+Welcome to my first blog! 
+
+![Caption here...](/img/blogs/amino_acid_sequence.png)

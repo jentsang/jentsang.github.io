@@ -1,0 +1,11 @@
+---
+title: "Blogs"
+listing: 
+  contents: blog_list
+  categories: true
+  type: grid
+  sort: "date desc"
+  fields: [image, title, subtitle, date]
+---
+
+Welcome to my blogs page! 

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-12-12">
+<meta name="dcterms.date" content="2026-01-15">
 
-<title>Predicting Credit Card Defaults</title>
+<title>The Art of Folding</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -328,15 +299,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#feature-engineering-selection" id="toc-feature-engineering-selection" class="nav-link" data-scroll-target="#feature-engineering-selection">Feature Engineering &amp; Selection</a></li>
-  <li><a href="#model-implementation" id="toc-model-implementation" class="nav-link" data-scroll-target="#model-implementation">Model Implementation</a></li>
-  <li><a href="#hyperparameter-optimization" id="toc-hyperparameter-optimization" class="nav-link" data-scroll-target="#hyperparameter-optimization">Hyperparameter Optimization</a></li>
-  <li><a href="#model-interpretation-shap" id="toc-model-interpretation-shap" class="nav-link" data-scroll-target="#model-interpretation-shap">Model Interpretation (SHAP)</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
-  <ul class="collapse">
-  <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
-  </ul></li>
+  <li><a href="#here-is-my-blog" id="toc-here-is-my-blog" class="nav-link active" data-scroll-target="#here-is-my-blog">Here is my blog!</a></li>
   </ul>
 </nav>
     </div>
@@ -346,9 +309,12 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Predicting Credit Card Defaults</h1>
-<p class="subtitle lead">Risk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability</p>
-</div>
+<h1 class="title">The Art of Folding</h1>
+<p class="subtitle lead">Protein folding and AlphaFold</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Explanations</div>
+  </div>
+  </div>
 
 
 
@@ -358,7 +324,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">December 12, 2025</p>
+      <p class="date">January 15, 2026</p>
     </div>
   </div>
   
@@ -370,52 +336,17 @@ window.Quarto = {
 </header>
 
 
-<p><img src="../img/projects/credit-card-default.jpg" class="img-fluid"></p>
-<section id="overview" class="level1">
-<h1>Overview</h1>
-<p>Financial institutions rely on accurate risk assessment to maintain stability. Using the <a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">UCI Default of Credit Card Clients Dataset</a>, this project aims to predict the likelihood of a client defaulting on their payments. After comparing multiple machine learning architectures, our <strong>Gradient Boosted Decision Tree</strong> emerged as the best model with a <strong>test accuracy of 82%</strong>.</p>
-<hr>
-</section>
-<section id="feature-engineering-selection" class="level1">
-<h1>Feature Engineering &amp; Selection</h1>
-<p>To better capture user behavior, I engineered a feature called Credit Utilization Ratio, that is calculated by amount of bill statement in a month divided by the amount of given credit (<span class="math inline">\(\frac{BILL\_AMT}{LIMIT\_BAL}\)</span>). This metric represents the proportion of a client’s credit limit currently in use, an indicator of financial stress.</p>
-<p>Experimented with Recursive feature elimination with cross-validation (RFECV) and Sequential Forward Selection (SFS) backward to select the best features.</p>
-<p>To optimize the model’s performance and reduce noise, I implemented:</p>
-<ul>
-<li>Recursive feature elimination with cross-validation (RFECV)</li>
-<li>Sequential Forward Selection (SFS) backward</li>
-</ul>
-<p>to identify the most predictive subset of features.</p>
-</section>
-<section id="model-implementation" class="level1">
-<h1>Model Implementation</h1>
-<p>We benchmarked four distinct classification algorithms to find the optimal balance between bias and variance:</p>
-<ol type="1">
-<li><p>Logistic Regression <code>from sklearn.linear_model import LogisticRegression</code></p></li>
-<li><p>Decision Tree <code>from sklearn.tree import DecisionTreeClassifier</code></p></li>
-<li><p>Random Forest <code>from sklearn.ensemble import RandomForestClassifier</code></p></li>
-<li><p>Gradient Boosted Decision Tree <code>from xgboost import XGBClassifier</code></p></li>
-</ol>
-</section>
-<section id="hyperparameter-optimization" class="level1">
-<h1>Hyperparameter Optimization</h1>
-<p>To maximize performance, I used <code>RandomizedSearchCV</code> for hyperparameter optimization, focusing on tree depth, learning rate, and estimator counts for the ensemble models.</p>
-</section>
-<section id="model-interpretation-shap" class="level1">
-<h1>Model Interpretation (SHAP)</h1>
-<p>Beyond just predicting “yes” or “no,” we focused on explainability. Using <code>TreeExplainer</code> from the SHAP library, we generated Waterfall and Beeswarm plots to visualize exactly how features like payment history and credit utilization influenced the model’s final decision.</p>
-<hr>
-</section>
-<section id="reflection" class="level1">
-<h1>Reflection</h1>
-<p>This was a very fun project to explore and compare the performance of different machine learning models.</p>
-<section id="credit" class="level2">
-<h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Nicole Link.</p>
-<p><a href="https://github.com/jentsang/credit-card-default">View Respository</a></p>
+<section id="here-is-my-blog" class="level1">
+<h1>Here is my blog!</h1>
+<p>Welcome to my first blog!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/blogs/amino_acid_sequence.png" class="img-fluid figure-img"></p>
+<figcaption>Caption here…</figcaption>
+</figure>
+</div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

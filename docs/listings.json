@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/blog.html",
+    "items": [
+      "/blog_list/alphafold.html"
+    ]
+  },
+  {
     "listing": "/recipes.html",
     "items": [
       "/recipe_list/matcha_babka.html"

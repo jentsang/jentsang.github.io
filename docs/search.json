@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blogs",
+    "section": "",
+    "text": "Welcome to my blogs page!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art of Folding\n\n\nProtein folding and AlphaFold\n\n\n\nJan 15, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -82,5 +89,12 @@
     "title": "👋 Hi, it’s Jennifer!",
     "section": "",
     "text": "Back to top"
+  },
+  {
+    "objectID": "blog_list/alphafold.html",
+    "href": "blog_list/alphafold.html",
+    "title": "The Art of Folding",
+    "section": "",
+    "text": "Here is my blog!\nWelcome to my first blog!\n\n\n\nCaption here…\n\n\n\n\n\n\n Back to top"
   }
 ]

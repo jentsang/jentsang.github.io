@@ -12,6 +12,7 @@ website:
       - about.qmd
       - projects.qmd
       - recipes.qmd
+      - blog.qmd
     tools:
       - icon: github
         icon-pack: fab
