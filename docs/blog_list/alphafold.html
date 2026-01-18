@@ -424,30 +424,34 @@ Figure&nbsp;1: A strand of protein sequence <span class="citation" data-cites="N
 <section id="what-is-alphafold" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-alphafold">What is AlphaFold?</h2>
 <p><a href="https://deepmind.google/science/alphafold/">AlphaFold</a> is a deep neural network (DNN) that can predict protein folding patterns.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/blogs/proteingif.webp" class="img-fluid figure-img"></p>
-<figcaption>The 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) <span class="citation" data-cites="StokelWalker2020AlphaFold">(<a href="#ref-StokelWalker2020AlphaFold" role="doc-biblioref">Stokel-Walker 2020</a>)</span>.</figcaption>
+<div id="fig-3d-protein" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-3d-protein-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/blogs/proteingif.webp" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-3d-protein-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) <span class="citation" data-cites="StokelWalker2020AlphaFold">(<a href="#ref-StokelWalker2020AlphaFold" role="doc-biblioref">Stokel-Walker 2020</a>)</span>.
+</figcaption>
 </figure>
 </div>
 <section id="what-is-dnn" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-dnn">What is DNN?</h3>
 <p>To understand how AlphaFold works, we have to look under the hood at <a href="https://medium.com/@zemim/deep-neural-network-dnn-explained-0f7311a0e869">deep neural networks (DNNs)</a>. Imagine you want to teach a computer to recognize a cat. The computer can’t “see” the cat has ears or whiskers. Instead, you show it thousands of pictures of cats and thousands of pictures of “not-cats.”</p>
-<p>A DNN is a machine learning framework that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face.</p>
+<p>A DNN is a machine learning model that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face.</p>
 <p>AlphaFold applies this same idea to protein structures. Instead of photos of cats, it was trained on all the known protein sequences and determined protein structures scientists spent decades solving. By analyzing the patterns in these known structures, AlphaFold takes in an amino acid sequence with an unknown structure, and it can predict a 3D protein structure.</p>
 </section>
 </section>
 <section id="machine-learning-breakthrough" class="level2">
 <h2 class="anchored" data-anchor-id="machine-learning-breakthrough">Machine Learning Breakthrough</h2>
 <p>Critical Assessment of Protein Structure Prediction (CASP) is a protein folding competition that started in 1994. It is equivalent to the Olympics of protein folding. Every two years, the world’s best minds competed, attempting to solve the protein folding problem, but progress was slow.</p>
-<p>CASP has their own measuring metric called the global distance test total score (GDT-TS). The GDT-TS ranges from a scale of 0 to 100, a percentage of how well the predicted structure matches the target. From <a href="#fig-casp13" class="quarto-xref">Figure&nbsp;2</a>, we can see a slow progression in the improvement of the accuracy over a decade. However, there was a drastic improvement in GDT score in the 13th CASP competition in 2018 (CASP13) compared to previous years. This breakthrough was due to the effective application of machine learning to predicting protein structures.</p>
+<p>CASP has their own measuring metric called the global distance test total score (GDT-TS). The GDT-TS ranges from a scale of 0 to 100, a percentage of how well the predicted structure matches the target. From <a href="#fig-casp13" class="quarto-xref">Figure&nbsp;3</a>, we can see a slow progression in the improvement of the accuracy over a decade. However, there was a drastic improvement in GDT score in the 13th CASP competition in 2018 (CASP13) compared to previous years. This breakthrough was due to the effective application of machine learning to predicting protein structures.</p>
 <div id="fig-casp13" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-casp13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../img/blogs/casp13.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-casp13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: The mean GDT score for each CASP competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
+Figure&nbsp;3: The mean GDT score for each CASP competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
 </figcaption>
 </figure>
 </div>
@@ -455,28 +459,28 @@ Figure&nbsp;2: The mean GDT score for each CASP competition <span class="citatio
 <section id="what-is-the-accuracy-of-using-ai" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-the-accuracy-of-using-ai">What is the Accuracy of using AI?</h2>
 <p>AlphaFold’s performance was awarded first place in the CASP13 competition. AlphaFold’s performance ranked the highest and was able to predict the general shape of the protein. However, it falls short in predicting the exact location of the atomic molecules in the structure.</p>
-<p>In the following year, the AlphaFold team went back to improve their model to develop AlphaFold2. At the 14th CASP competition in 2020, AlphaFold2 was able accurately predict the location of the very specific atoms in the structure. AlphaFold2 achieved a record-breaking GDT total score of 92.4 (see <a href="#fig-casp14" class="quarto-xref">Figure&nbsp;3</a>), which was considered a similar level of accuracy to experimental results <span class="citation" data-cites="Zhang2025AIProtein">(<a href="#ref-Zhang2025AIProtein" role="doc-biblioref">Zhang et al. 2025</a>)</span>. AlphaFold2 won the CASP14 competition by a huge margin and was recognized by the organizers of the CASP competition for being able to solve the “problem folding problem” <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.</p>
+<p>In the following year, the AlphaFold team went back to improve their model to develop AlphaFold2. At the 14th CASP competition in 2020, AlphaFold2 was able accurately predict the location of the very specific atoms in the structure. AlphaFold2 achieved a record-breaking GDT total score of 92.4 (see <a href="#fig-casp14" class="quarto-xref">Figure&nbsp;4</a>), which was considered a similar level of accuracy to experimental results <span class="citation" data-cites="Zhang2025AIProtein">(<a href="#ref-Zhang2025AIProtein" role="doc-biblioref">Zhang et al. 2025</a>)</span>. AlphaFold2 won the CASP14 competition by a huge margin and was recognized by the organizers of the CASP competition for being able to solve the “problem folding problem” <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.</p>
 <div id="fig-casp14" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-casp14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../img/blogs/casp14.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-casp14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: The mean GDT score for each CASP competition highlights the breakthrough in the CASP14 competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
+Figure&nbsp;4: The mean GDT score for each CASP competition highlights the breakthrough in the CASP14 competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="why-this-changes-everything" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-changes-everything">Why This Changes Everything</h2>
-<p>In 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry <span class="citation" data-cites="NobelChemistry2024">(<a href="#ref-NobelChemistry2024" role="doc-biblioref">Nobel Prize Outreach 2024</a>)</span>. They were recognized for solving a problem that scientist has been struggling with for the past five decades.</p>
-<p>Since then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries [123]. This advancement is monumental, allowing scientists to create new protein folding with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer [123]. This breakthrough allows a potential application to drug development, understanding diseases, and engineering new proteins:</p>
+<p>In 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry <span class="citation" data-cites="NobelChemistry2024">(<a href="#ref-NobelChemistry2024" role="doc-biblioref">Nobel Prize Outreach 2024</a>)</span>. They were recognized for solving a problem that scientists have been struggling with for the past five decades.</p>
+<p>Since then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>. This advancement is monumental, allowing scientists to design new proteins with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>. This breakthrough enables potential applications in drug development, diseases research, and protein engineering:</p>
 <ul>
-<li><p>Accelerated Drug Discovery: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now “see” the lock (the protein structure) right away, allowing us to design better medicines faster.</p></li>
-<li><p>Tackling Neglected Diseases: Many diseases affect developing nations that haven’t attracted the funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab practises.</p></li>
-<li><p>Environmental Solutions: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these “super-enzymes” that could tackle cleaning up the waste in our lands and oceans.</p></li>
+<li><p><span class="text-primary-emphasis">Accelerated Drug Discovery</span>: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now “see” the lock (the protein structure) right away, allowing us to design better medicines faster.</p></li>
+<li><p><span class="text-primary-emphasis">Diseases Research</span>: Many diseases affect developing countries that do not have enough funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab techniques.</p></li>
+<li><p><span class="text-primary-emphasis">Environmental Solutions</span>: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these “super-enzymes” that could help clean up the waste in our lands and oceans.</p></li>
 </ul>
-<p>This is taking big steps in the fields not just medicine, but also in biotechnology, agriculture, and the environment.</p>
+<p>This represents a major leap not just in medicine, but also in biotechnology, agriculture, and the environment.</p>
 
 
 

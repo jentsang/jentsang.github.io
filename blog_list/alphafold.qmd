@@ -30,12 +30,12 @@ Experimentally determining the 3D structure of a protein is extremely laborious 
 ## What is AlphaFold?
 [AlphaFold](https://deepmind.google/science/alphafold/) is a deep neural network (DNN) that can predict protein folding patterns. 
 
-![The 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) [@StokelWalker2020AlphaFold].](/img/blogs/proteingif.webp)
+![The 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) [@StokelWalker2020AlphaFold].](/img/blogs/proteingif.webp){#fig-3d-protein}
 
 ### What is DNN?
 To understand how AlphaFold works, we have to look under the hood at [deep neural networks (DNNs)](https://medium.com/@zemim/deep-neural-network-dnn-explained-0f7311a0e869). Imagine you want to teach a computer to recognize a cat. The computer can’t “see” the cat has ears or whiskers. Instead, you show it thousands of pictures of cats and thousands of pictures of “not-cats."
 
-A DNN is a machine learning framework that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face. 
+A DNN is a machine learning model that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face. 
 
 AlphaFold applies this same idea to protein structures. Instead of photos of cats, it was trained on all the known protein sequences and determined protein structures scientists spent decades solving. By analyzing the patterns in these known structures, AlphaFold takes in an amino acid sequence with an unknown structure, and it can predict a 3D protein structure. 
 
@@ -58,14 +58,14 @@ In the following year, the AlphaFold team went back to improve their model to de
 
 
 ## Why This Changes Everything
-In 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry [@NobelChemistry2024]. They were recognized for solving a problem that scientist has been struggling with for the past five decades.
+In 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry [@NobelChemistry2024]. They were recognized for solving a problem that scientists have been struggling with for the past five decades.
 
-Since then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries [123]. This advancement is monumental, allowing scientists to create new protein folding with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer [123]. This breakthrough allows a potential application to drug development, understanding diseases, and engineering new proteins: 
+Since then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries [@DeepMindAlphaFold]. This advancement is monumental, allowing scientists to design new proteins with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer [@DeepMindAlphaFold]. This breakthrough enables potential applications in drug development, diseases research, and protein engineering: 
 
-- Accelerated Drug Discovery: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now "see" the lock (the protein structure) right away, allowing us to design better medicines faster.
+- <span class="text-primary-emphasis">Accelerated Drug Discovery</span>: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now "see" the lock (the protein structure) right away, allowing us to design better medicines faster.
 
-- Tackling Neglected Diseases: Many diseases affect developing nations that haven't attracted the funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab practises.
+- <span class="text-primary-emphasis">Diseases Research</span>: Many diseases affect developing countries that do not have enough funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab techniques.
 
-- Environmental Solutions: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these "super-enzymes" that could tackle cleaning up the waste in our lands and oceans. 
+- <span class="text-primary-emphasis">Environmental Solutions</span>: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these "super-enzymes" that could help clean up the waste in our lands and oceans. 
 
-This is taking big steps in the fields not just medicine, but also in biotechnology, agriculture, and the environment.
+This represents a major leap not just in medicine, but also in biotechnology, agriculture, and the environment.
