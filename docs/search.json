@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blogs",
     "section": "",
-    "text": "Welcome to my blogs page!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art of Folding\n\n\nProtein folding and AlphaFold\n\n\n\nJan 15, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Welcome to my blogs page!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art of Folding\n\n\nAlphaFold - breakthrough of the century in protein folding\n\n\n\nJan 15, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -95,6 +95,48 @@
     "href": "blog_list/alphafold.html",
     "title": "The Art of Folding",
     "section": "",
-    "text": "Here is my blog!\nWelcome to my first blog!\n\n\n\nCaption here…\n\n\n\n\n\n\n Back to top"
+    "text": "Proteins are building blocks in our bodies and control vital body functions. They provide antibodies that protect us from pathogens, structures in our muscle tissues, and aid in the transport of oxygen in our blood. To understand how the body functions, we need to understand the structure of these molecules."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#what-is-protein-folding",
+    "href": "blog_list/alphafold.html#what-is-protein-folding",
+    "title": "The Art of Folding",
+    "section": "What is Protein Folding?",
+    "text": "What is Protein Folding?\nA protein is made up of a chain of amino acids sequence, which you can think of like a bracelet, with each bead as an amino acid. The sequence of a protein is encoded in the cell’s DNA. There are about 20 common types of amino acids, so you have around 20 different colour beads to make this bracelet. This bracelet can be formed into a 3D structure by bending and shaping it, which we call protein folding (see Figure 1). A protein’s shape determines its function, and knowing the shape is crucial for scientists to understand diseases and create new drugs to target them. But predicting its shape is extremely difficult. It’s as if doing origami with no instructions.\n\n\n\n\n\n\nFigure 1: A strand of protein sequence (Nobel Prize Outreach 2024)."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#how-did-scientists-try-to-solve-the-problem",
+    "href": "blog_list/alphafold.html#how-did-scientists-try-to-solve-the-problem",
+    "title": "The Art of Folding",
+    "section": "How Did Scientists Try to Solve the Problem?",
+    "text": "How Did Scientists Try to Solve the Problem?\nDepending on the sequence of the protein, there are many interactions that occur between the amino acids, causing it to take on a highly specific and unique shape. Fifty years ago, scientists realized that if they were able to solve every single interaction in a protein sequence, then they could predict its 3D shape. However, the number of different combinations possible is astronomical.\nIn 1969, scientist Cyrus Levinthal noted that there are approximately \\(10^300\\) possible formations a typical protein can take, yet it is able to fold spontaneously within milliseconds. This was later known as Levinthal’s paradox (Zhang et al. 2025).\nExperimentally determining the 3D structure of a protein is extremely laborious and can take months or even years. As of 2020, only about 170,000 out of more than 200 million known protein sequence has been solved (Service 2020). To tackle to this problem, some scientists to go the computation route, and turned to machine learning for the answer."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#what-is-alphafold",
+    "href": "blog_list/alphafold.html#what-is-alphafold",
+    "title": "The Art of Folding",
+    "section": "What is AlphaFold?",
+    "text": "What is AlphaFold?\nAlphaFold is a deep neural network (DNN) that can predict protein folding patterns.\n\n\n\nThe 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) (Stokel-Walker 2020).\n\n\n\nWhat is DNN?\nTo understand how AlphaFold works, we have to look under the hood at deep neural networks (DNNs). Imagine you want to teach a computer to recognize a cat. The computer can’t “see” the cat has ears or whiskers. Instead, you show it thousands of pictures of cats and thousands of pictures of “not-cats.”\nA DNN is a machine learning framework that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face.\nAlphaFold applies this same idea to protein structures. Instead of photos of cats, it was trained on all the known protein sequences and determined protein structures scientists spent decades solving. By analyzing the patterns in these known structures, AlphaFold takes in an amino acid sequence with an unknown structure, and it can predict a 3D protein structure."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#machine-learning-breakthrough",
+    "href": "blog_list/alphafold.html#machine-learning-breakthrough",
+    "title": "The Art of Folding",
+    "section": "Machine Learning Breakthrough",
+    "text": "Machine Learning Breakthrough\nCritical Assessment of Protein Structure Prediction (CASP) is a protein folding competition that started in 1994. It is equivalent to the Olympics of protein folding. Every two years, the world’s best minds competed, attempting to solve the protein folding problem, but progress was slow.\nCASP has their own measuring metric called the global distance test total score (GDT-TS). The GDT-TS ranges from a scale of 0 to 100, a percentage of how well the predicted structure matches the target. From Figure 2, we can see a slow progression in the improvement of the accuracy over a decade. However, there was a drastic improvement in GDT score in the 13th CASP competition in 2018 (CASP13) compared to previous years. This breakthrough was due to the effective application of machine learning to predicting protein structures.\n\n\n\n\n\n\nFigure 2: The mean GDT score for each CASP competition (Google DeepMind 2024)."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#what-is-the-accuracy-of-using-ai",
+    "href": "blog_list/alphafold.html#what-is-the-accuracy-of-using-ai",
+    "title": "The Art of Folding",
+    "section": "What is the Accuracy of using AI?",
+    "text": "What is the Accuracy of using AI?\nAlphaFold’s performance was awarded first place in the CASP13 competition. AlphaFold’s performance ranked the highest and was able to predict the general shape of the protein. However, it falls short in predicting the exact location of the atomic molecules in the structure.\nIn the following year, the AlphaFold team went back to improve their model to develop AlphaFold2. At the 14th CASP competition in 2020, AlphaFold2 was able accurately predict the location of the very specific atoms in the structure. AlphaFold2 achieved a record-breaking GDT total score of 92.4 (see Figure 3), which was considered a similar level of accuracy to experimental results (Zhang et al. 2025). AlphaFold2 won the CASP14 competition by a huge margin and was recognized by the organizers of the CASP competition for being able to solve the “problem folding problem” (Google DeepMind 2024).\n\n\n\n\n\n\nFigure 3: The mean GDT score for each CASP competition highlights the breakthrough in the CASP14 competition (Google DeepMind 2024)."
+  },
+  {
+    "objectID": "blog_list/alphafold.html#why-this-changes-everything",
+    "href": "blog_list/alphafold.html#why-this-changes-everything",
+    "title": "The Art of Folding",
+    "section": "Why This Changes Everything",
+    "text": "Why This Changes Everything\nIn 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry (Nobel Prize Outreach 2024). They were recognized for solving a problem that scientist has been struggling with for the past five decades.\nSince then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries [123]. This advancement is monumental, allowing scientists to create new protein folding with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer [123]. This breakthrough allows a potential application to drug development, understanding diseases, and engineering new proteins:\n\nAccelerated Drug Discovery: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now “see” the lock (the protein structure) right away, allowing us to design better medicines faster.\nTackling Neglected Diseases: Many diseases affect developing nations that haven’t attracted the funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab practises.\nEnvironmental Solutions: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these “super-enzymes” that could tackle cleaning up the waste in our lands and oceans.\n\nThis is taking big steps in the fields not just medicine, but also in biotechnology, agriculture, and the environment."
   }
 ]

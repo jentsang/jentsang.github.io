@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jennifer Tsang">
 <meta name="dcterms.date" content="2026-01-15">
 
 <title>The Art of Folding</title>
@@ -21,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -73,6 +94,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -299,7 +349,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#here-is-my-blog" id="toc-here-is-my-blog" class="nav-link active" data-scroll-target="#here-is-my-blog">Here is my blog!</a></li>
+  <li><a href="#what-is-protein-folding" id="toc-what-is-protein-folding" class="nav-link active" data-scroll-target="#what-is-protein-folding">What is Protein Folding?</a></li>
+  <li><a href="#how-did-scientists-try-to-solve-the-problem" id="toc-how-did-scientists-try-to-solve-the-problem" class="nav-link" data-scroll-target="#how-did-scientists-try-to-solve-the-problem">How Did Scientists Try to Solve the Problem?</a></li>
+  <li><a href="#what-is-alphafold" id="toc-what-is-alphafold" class="nav-link" data-scroll-target="#what-is-alphafold">What is AlphaFold?</a>
+  <ul class="collapse">
+  <li><a href="#what-is-dnn" id="toc-what-is-dnn" class="nav-link" data-scroll-target="#what-is-dnn">What is DNN?</a></li>
+  </ul></li>
+  <li><a href="#machine-learning-breakthrough" id="toc-machine-learning-breakthrough" class="nav-link" data-scroll-target="#machine-learning-breakthrough">Machine Learning Breakthrough</a></li>
+  <li><a href="#what-is-the-accuracy-of-using-ai" id="toc-what-is-the-accuracy-of-using-ai" class="nav-link" data-scroll-target="#what-is-the-accuracy-of-using-ai">What is the Accuracy of using AI?</a></li>
+  <li><a href="#why-this-changes-everything" id="toc-why-this-changes-everything" class="nav-link" data-scroll-target="#why-this-changes-everything">Why This Changes Everything</a></li>
   </ul>
 </nav>
     </div>
@@ -310,9 +368,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The Art of Folding</h1>
-<p class="subtitle lead">Protein folding and AlphaFold</p>
+<p class="subtitle lead">AlphaFold - breakthrough of the century in protein folding</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Explanations</div>
+    <div class="quarto-category">news</div>
   </div>
   </div>
 
@@ -320,6 +378,12 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jennifer Tsang </p>
+          </div>
+  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
@@ -336,20 +400,105 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="here-is-my-blog" class="level1">
-<h1>Here is my blog!</h1>
-<p>Welcome to my first blog!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../img/blogs/amino_acid_sequence.png" class="img-fluid figure-img"></p>
-<figcaption>Caption here…</figcaption>
+<p>Proteins are building blocks in our bodies and control vital body functions. They provide antibodies that protect us from pathogens, structures in our muscle tissues, and aid in the transport of oxygen in our blood. To understand how the body functions, we need to understand the structure of these molecules.</p>
+<section id="what-is-protein-folding" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-protein-folding">What is Protein Folding?</h2>
+<p>A protein is made up of a chain of amino acids sequence, which you can think of like a bracelet, with each bead as an amino acid. The sequence of a protein is encoded in the cell’s DNA. There are about 20 common types of amino acids, so you have around 20 different colour beads to make this bracelet. This bracelet can be formed into a 3D structure by bending and shaping it, which we call protein folding (see <a href="#fig-protein-sequence" class="quarto-xref">Figure&nbsp;1</a>). A protein’s shape determines its function, and knowing the shape is crucial for scientists to understand diseases and create new drugs to target them. But predicting its shape is extremely difficult. It’s as if doing origami with no instructions.</p>
+<div id="fig-protein-sequence" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-protein-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/blogs/amino_acid_sequence.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-protein-sequence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: A strand of protein sequence <span class="citation" data-cites="NobelChemistry2024">(<a href="#ref-NobelChemistry2024" role="doc-biblioref">Nobel Prize Outreach 2024</a>)</span>.
+</figcaption>
 </figure>
 </div>
+</section>
+<section id="how-did-scientists-try-to-solve-the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="how-did-scientists-try-to-solve-the-problem">How Did Scientists Try to Solve the Problem?</h2>
+<p>Depending on the sequence of the protein, there are many interactions that occur between the amino acids, causing it to take on a highly specific and unique shape. Fifty years ago, scientists realized that if they were able to solve every single interaction in a protein sequence, then they could predict its 3D shape. However, the number of different combinations possible is astronomical.</p>
+<p>In 1969, scientist Cyrus Levinthal noted that there are approximately <span class="math inline">\(10^300\)</span> possible formations a typical protein can take, yet it is able to fold spontaneously within milliseconds. This was later known as Levinthal’s paradox <span class="citation" data-cites="Zhang2025AIProtein">(<a href="#ref-Zhang2025AIProtein" role="doc-biblioref">Zhang et al. 2025</a>)</span>.</p>
+<p>Experimentally determining the 3D structure of a protein is extremely laborious and can take months or even years. As of 2020, only about 170,000 out of more than 200 million known protein sequence has been solved <span class="citation" data-cites="ScienceAlphaFold2020">(<a href="#ref-ScienceAlphaFold2020" role="doc-biblioref">Service 2020</a>)</span>. To tackle to this problem, some scientists to go the computation route, and turned to machine learning for the answer.</p>
+</section>
+<section id="what-is-alphafold" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-alphafold">What is AlphaFold?</h2>
+<p><a href="https://deepmind.google/science/alphafold/">AlphaFold</a> is a deep neural network (DNN) that can predict protein folding patterns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/blogs/proteingif.webp" class="img-fluid figure-img"></p>
+<figcaption>The 3D protein structure predicted by AlphaFold (blue) and determined through experimentation (green) <span class="citation" data-cites="StokelWalker2020AlphaFold">(<a href="#ref-StokelWalker2020AlphaFold" role="doc-biblioref">Stokel-Walker 2020</a>)</span>.</figcaption>
+</figure>
+</div>
+<section id="what-is-dnn" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-dnn">What is DNN?</h3>
+<p>To understand how AlphaFold works, we have to look under the hood at <a href="https://medium.com/@zemim/deep-neural-network-dnn-explained-0f7311a0e869">deep neural networks (DNNs)</a>. Imagine you want to teach a computer to recognize a cat. The computer can’t “see” the cat has ears or whiskers. Instead, you show it thousands of pictures of cats and thousands of pictures of “not-cats.”</p>
+<p>A DNN is a machine learning framework that was constructed to mimic the structure of a human brain. It contains many layers, and each layer contains nodes that are equivalent to the neurons in our brain to perform calculations. The DNN “learns” through recognizing patterns. The first layer might detect simple edges, the next layer detects shapes like circles, and the final layer puts them together to recognize a face.</p>
+<p>AlphaFold applies this same idea to protein structures. Instead of photos of cats, it was trained on all the known protein sequences and determined protein structures scientists spent decades solving. By analyzing the patterns in these known structures, AlphaFold takes in an amino acid sequence with an unknown structure, and it can predict a 3D protein structure.</p>
+</section>
+</section>
+<section id="machine-learning-breakthrough" class="level2">
+<h2 class="anchored" data-anchor-id="machine-learning-breakthrough">Machine Learning Breakthrough</h2>
+<p>Critical Assessment of Protein Structure Prediction (CASP) is a protein folding competition that started in 1994. It is equivalent to the Olympics of protein folding. Every two years, the world’s best minds competed, attempting to solve the protein folding problem, but progress was slow.</p>
+<p>CASP has their own measuring metric called the global distance test total score (GDT-TS). The GDT-TS ranges from a scale of 0 to 100, a percentage of how well the predicted structure matches the target. From <a href="#fig-casp13" class="quarto-xref">Figure&nbsp;2</a>, we can see a slow progression in the improvement of the accuracy over a decade. However, there was a drastic improvement in GDT score in the 13th CASP competition in 2018 (CASP13) compared to previous years. This breakthrough was due to the effective application of machine learning to predicting protein structures.</p>
+<div id="fig-casp13" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-casp13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/blogs/casp13.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-casp13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The mean GDT score for each CASP competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="what-is-the-accuracy-of-using-ai" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-accuracy-of-using-ai">What is the Accuracy of using AI?</h2>
+<p>AlphaFold’s performance was awarded first place in the CASP13 competition. AlphaFold’s performance ranked the highest and was able to predict the general shape of the protein. However, it falls short in predicting the exact location of the atomic molecules in the structure.</p>
+<p>In the following year, the AlphaFold team went back to improve their model to develop AlphaFold2. At the 14th CASP competition in 2020, AlphaFold2 was able accurately predict the location of the very specific atoms in the structure. AlphaFold2 achieved a record-breaking GDT total score of 92.4 (see <a href="#fig-casp14" class="quarto-xref">Figure&nbsp;3</a>), which was considered a similar level of accuracy to experimental results <span class="citation" data-cites="Zhang2025AIProtein">(<a href="#ref-Zhang2025AIProtein" role="doc-biblioref">Zhang et al. 2025</a>)</span>. AlphaFold2 won the CASP14 competition by a huge margin and was recognized by the organizers of the CASP competition for being able to solve the “problem folding problem” <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.</p>
+<div id="fig-casp14" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-casp14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../img/blogs/casp14.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-casp14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The mean GDT score for each CASP competition highlights the breakthrough in the CASP14 competition <span class="citation" data-cites="DeepMindAlphaFold">(<a href="#ref-DeepMindAlphaFold" role="doc-biblioref">Google DeepMind 2024</a>)</span>.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="why-this-changes-everything" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-changes-everything">Why This Changes Everything</h2>
+<p>In 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry <span class="citation" data-cites="NobelChemistry2024">(<a href="#ref-NobelChemistry2024" role="doc-biblioref">Nobel Prize Outreach 2024</a>)</span>. They were recognized for solving a problem that scientist has been struggling with for the past five decades.</p>
+<p>Since then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries [123]. This advancement is monumental, allowing scientists to create new protein folding with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer [123]. This breakthrough allows a potential application to drug development, understanding diseases, and engineering new proteins:</p>
+<ul>
+<li><p>Accelerated Drug Discovery: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now “see” the lock (the protein structure) right away, allowing us to design better medicines faster.</p></li>
+<li><p>Tackling Neglected Diseases: Many diseases affect developing nations that haven’t attracted the funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab practises.</p></li>
+<li><p>Environmental Solutions: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these “super-enzymes” that could tackle cleaning up the waste in our lands and oceans.</p></li>
+</ul>
+<p>This is taking big steps in the fields not just medicine, but also in biotechnology, agriculture, and the environment.</p>
+
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-DeepMindAlphaFold" class="csl-entry" role="listitem">
+Google DeepMind. 2024. <span>“<span>AlphaFold</span>: <span>A</span>ccelerating Breakthroughs in Biology with <span>AI</span>.”</span> <a href="https://deepmind.google/science/alphafold/">https://deepmind.google/science/alphafold/</a>.
+</div>
+<div id="ref-NobelChemistry2024" class="csl-entry" role="listitem">
+Nobel Prize Outreach. 2024. <span>“Press Release: The <span>N</span>obel <span>P</span>rize in <span>C</span>hemistry 2024.”</span> <a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/">https://www.nobelprize.org/prizes/chemistry/2024/press-release/</a>.
+</div>
+<div id="ref-ScienceAlphaFold2020" class="csl-entry" role="listitem">
+Service, Robert F. 2020. <span>“The Protein-Folding Problem, a Major Conundrum of Biology, Has Been Solved by <span>AI</span>.”</span> <em>Science</em> 370 (6521): 1144–45. <a href="https://doi.org/10.1126/science.370.6521.1144">https://doi.org/10.1126/science.370.6521.1144</a>.
+</div>
+<div id="ref-StokelWalker2020AlphaFold" class="csl-entry" role="listitem">
+Stokel-Walker, Chris. 2020. <span>“<span>AlphaFold</span> Proves That <span>AI</span> Can Crack Fundamental Scientific Problems.”</span> <em>IEEE Spectrum</em>, December. <a href="https://spectrum.ieee.org/alphafold-proves-that-ai-can-crack-fundamental-scientific-problems">https://spectrum.ieee.org/alphafold-proves-that-ai-can-crack-fundamental-scientific-problems</a>.
+</div>
+<div id="ref-Zhang2025AIProtein" class="csl-entry" role="listitem">
+Zhang, Zhidian, Chenxi Ou, Yehlin Cho, Yo Akiyama, and Sergey Ovchinnikov. 2025. <span>“Artificial Intelligence Methods for Protein Folding and Design.”</span> <em>Current Opinion in Structural Biology</em> 93: 103066. <a href="https://doi.org/10.1016/j.sbi.2025.103066">https://doi.org/10.1016/j.sbi.2025.103066</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
