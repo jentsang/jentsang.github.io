@@ -1,7 +1,7 @@
 ---
 title: "Matcha Wreath Babka"
 subtitle: "A vibrant, earthy twist on the classic festive bread"
-categories: [Festive, Bread]
+categories: [Festive, Bread, Matcha]
 date: "2025-12-25"
 image: /img/recipes/matcha_babka.jpg
 ---

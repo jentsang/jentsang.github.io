@@ -1,0 +1,65 @@
+---
+title: "Dubai Chocolate Cookies"
+subtitle: "A decadent fusion of rich cocoa and the signature crunch of pistachio kataifi"
+categories: [Cookies, Chocolate]
+date: "2026-02-18"
+image: /img/recipes/dubai_chocolate_cookie.jpg
+---
+
+![Double chocolate cookies stuffed with pistachio and kataifi.](/img/recipes/dubai_chocolate_cookie.jpg)
+
+This recipe takes the viral "Dubai Chocolate" flavours and reimagines them in a cookie format. The base is a a delicious double chocolate chip cookie adapted from [Preppy Kitchen](https://preppykitchen.com/double-chocolate-chip-cookies/#recipe), providing a soft and fudgy contrast to the unique textures of toasted kataifi and pistachio paste.
+
+---
+
+### Time 
+<span class="text-warning">1 hour</span>
+
+---
+
+### Ingredients
+
+#### The Cookie Base
+* 115g Unsalted Butter (softened)
+* 20g Brown Sugar
+* 80g Granulated Sugar
+* 25g Honey
+* 1 Large Egg (room temp)
+* 5g Vanilla Extract
+* 120g All-Purpose Flour
+* 33g Cocoa Powder
+* 3g Baking Soda
+* 3g Salt
+* 50g Dark Chocolate Chips
+
+#### The Filling
+* Kataifi (I substituted with shredded phyllo pastry)
+* A knob of butter (for toasting)
+* Pistachio Paste
+
+---
+
+### Instructions
+
+1. In a stand mixer fitted with a paddle attachment, cream together <span class="text-primary-emphasis">butter, brown sugar, granulated sugar,</span> and <span class="text-primary-emphasis">honey</span> on <span class="text-primary-emphasis">medium speed</span> until light and fluffy <span class="text-warning">(3-5 minutes)</span>.
+2. Add in <span class="text-primary-emphasis">egg</span> and <span class="text-primary-emphasis">vanilla</span> and beat until combined. Scrape down the sides of the bowl occasionally for even mixing.
+3. In a separate bowl, combine the <span class="text-primary-emphasis">dry ingredients (flour, cocoa powder, baking soda, and salt)</span>. 
+4. Slowly add the dry mixture to the butter mixture until combined while mixing on <span class="text-primary-emphasis">low speed</span>.
+5. Stir in the <span class="text-primary-emphasis">chocolate chips</span>. 
+6. Preheat the oven to <span class="text-success">375°F / 190°C</span>. Line two baking sheets with parchment paper.
+7. Scoop <span class="text-success">1½ tablespoon-sized</span> balls of dough on the cookie sheet, placing them about <span class="text-success">2 inches apart</span>.
+8. Bake for <span class="text-warning">10 minutes</span> or until cookie edges are firm and the center appears dry. 
+9. Let cool on the sheets for <span class="text-warning">5 minutes</span> before transferring to wire racks to continue cooling. 
+
+#### The Filling & Assembly
+1. To make the filling, sauté <span class="text-primary-emphasis">kataifi</span> in a pan with a little butter until golden brown and crispy. 
+2. Mix the crispy kataifi with <span class="text-primary-emphasis">pistachio paste</span> until it forms a thick, spreadable consistency.
+3. **Pro-tip:** To stuff the cookies, created a little divot with a small round spoon, and place place a teaspoon of the pistachio-kataifi mixture in the center.
+
+::: {layout="[[57.2, 42.8]]" layout-valign="middle"}
+![Making small divots](/img/recipes/dubai_chocolate_cookie_divot.jpg)
+
+![Filling the cookies](/img/recipes/dubai_chocolate_cookie_undecorated.jpg)
+:::
+
+4. Decorate the top with some melted chocolate and gold, and enjoy! 
