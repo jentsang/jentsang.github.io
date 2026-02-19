@@ -18,7 +18,7 @@ listing:
   }
 </style>
 
-Aside from data science and sports, I love to cook and bake. I am thrilled to share that I was a contestant on <span class="text-primary-emphasis">The Great Canadian Baking Show Season 9</span>! 
+Aside from data science and sports, I love to cook and bake. Fun fact, I was actually a contestant on <span class="text-primary-emphasis">The Great Canadian Baking Show Season 9</span>! 
 
 You can read my [official baker bio here](https://www.cbc.ca/life/greatcanadianbakingshow/bakers/jennifer-tsang-gcbs-baker-bio-1.7624553) or watch the season for free on [CBC Gem](https://gem.cbc.ca/the-great-canadian-baking-show/s09). 
 
