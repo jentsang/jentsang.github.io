@@ -1,0 +1,46 @@
+---
+title: "Relationship Botany"
+subtitle: "A Pixel-Art Personality Quiz Exploring Attachment Styles"
+date: "2026-03-19"
+image: /img/projects/botany-cover.png
+---
+
+:::: {.columns}
+::: {.column width="50%"}
+![](/img/projects/botany-main.png)
+:::
+::: {.column width="50%"}
+![](/img/projects/botany-results.png)
+:::
+::::
+
+[View Figma Prototype](https://safari-jog-16403291.figma.site/)
+
+# Overview
+Psychology and self-discovery can often feel clinical or intimidating. Built during a 3-hour Mini Figma Hackathon, this project aimed to make understanding your attachment style accessible, delightful, and highly shareable. By leaning into the universal metaphor of plant care, **Relationship Botany** is an interactive, mobile-first prototype that dynamically maps your relationship needs to the perfect houseplant. 
+
+---
+
+# Design & UX Strategy
+To move from concept to a polished MVP under three hours, I focused on high-impact visual storytelling and seamless prototyping:
+
+* **Cozy Indie Aesthetic:** Designed entirely with a cohesive 2D pixel-art style. The UI utilizes an earthy, calming palette of sage greens and terracotta oranges to create a warm gaming environment.
+
+* **Dynamic Storytelling:** Instead of a standard progress bar, the quiz features a dynamic plant avatar. Utilizing Figma's **Smart Animate**, a tiny pixelated seed smoothly sprouts, grows a stem, and forms a bud as the user advances through the 10 questions.
+
+* **Tactile Micro-Interactions:** Built custom master components for the answer cards featuring distinct Hover and Pressed states to give the user satisfying visual feedback.
+
+# The Botanical Matches
+The quiz runs on a "Majority Rules" logic engine, assessing situational relationship questions to generate one of four results:
+
+1. **The Sunflower (Secure):** Resilient, deep-rooted, and naturally turns toward the light.
+2. **The Fern (Anxious):** Beautiful and caring, but highly sensitive and requires a consistent, reassuring environment.
+3. **The Cactus (Avoidant):** Fiercely independent, self-reliant, and needs plenty of space to thrive.
+4. **The Orchid (Fearful-Avoidant):** Deeply rewarding but complex, requiring a delicate balance of care and boundaries.
+
+---
+
+# Reflection 
+This was a incredibly fun, fast-paced challenge. Constraining the timeline to just three hours forced me to prioritize the core user experience, leverage Figma AI for rapid asset generation, and focus on the micro-interactions that make a prototype feel like a fully coded product. 
+
+[View Repository](https://github.com/jentsang/RelationshipBotany)

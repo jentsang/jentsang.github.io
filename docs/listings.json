@@ -15,9 +15,19 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/project_list/relationship_botany.html",
+      "/project_list/flavour_network.html",
+      "/project_list/movie_prediction.html",
       "/project_list/credit-card-default-classfication.html",
       "/project_list/hotdog_predictor.html",
       "/project_list/bean_and_brew.html"
+    ]
+  },
+  {
+    "listing": "/dashboards.html",
+    "items": [
+      "/dashboard_list/vancouver_crimes.html",
+      "/dashboard_list/breast_cancer_diagnostics.html"
     ]
   }
 ]

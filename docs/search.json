@@ -7,95 +7,11 @@
     "text": "Welcome to my blogs page!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Art of Folding\n\n\nAlphaFold - breakthrough of the century in protein folding\n\n\n\nJan 15, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "My name is Jennifer Tsang, nice to meet you!\nI hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia.\nMy interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\n\nUniversity of British Columbia\n\nVancouver, BC\nM.Sc. in Data Science | 2025 - 2026\n\nUniversity of British Columbia\n\nVancouver, BC\nB.A.Sc. in Biomedical Engineering | 2018 - 2023"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "About",
-    "section": "Experience",
-    "text": "Experience\n\nCognitive Neuroscience of Schizophrenia Lab\n\n\nBC Children’s Hospital Research Institute\n\nResearch Assistant | May 2024 - September 2025\nProcess, analyze, and visualize fMRI brain images using statistical and machine learning algorithms.\nSkills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing\n\nComputational Ophthalmic Imaging Lab\n\n\nEye Care Centre, Vancouver General Hospital\n\nResearch Assistant | October 2024 - April 2025\nApply multi-volume registration and coefficient of variance (CoV) to quantify retinal capillary perfusion on optical coherence tomography angiography (OCTA) data.\nSkills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review"
-  },
-  {
-    "objectID": "about.html#publication",
-    "href": "about.html#publication",
-    "title": "About",
-    "section": "Publication",
-    "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
-  },
-  {
-    "objectID": "project_list/credit-card-default-classfication.html#credit",
-    "href": "project_list/credit-card-default-classfication.html#credit",
-    "title": "Predicting Credit Card Defaults",
+    "objectID": "dashboard_list/breast_cancer_diagnostics.html#credit",
+    "href": "dashboard_list/breast_cancer_diagnostics.html#credit",
+    "title": "Breast Cancer Diagnostics",
     "section": "Credit",
-    "text": "Credit\nCollaborator: Built with Nicole Link.\nView Respository"
-  },
-  {
-    "objectID": "project_list/bean_and_brew.html#credit",
-    "href": "project_list/bean_and_brew.html#credit",
-    "title": "Bean and Brew",
-    "section": "Credit",
-    "text": "Credit\nCollaborator: Built with Jessie Liang.\nView Repository"
-  },
-  {
-    "objectID": "recipe_list/dubai_chocolate_cookie.html",
-    "href": "recipe_list/dubai_chocolate_cookie.html",
-    "title": "Dubai Chocolate Cookies",
-    "section": "",
-    "text": "Double chocolate cookies stuffed with pistachio and kataifi.\n\n\nThis recipe takes the viral “Dubai Chocolate” flavours and reimagines them in a cookie format. The base is a a delicious double chocolate chip cookie adapted from Preppy Kitchen, providing a soft and fudgy contrast to the unique textures of toasted kataifi and pistachio paste.\n\n\nTime\n1 hour\n\n\n\nIngredients\n\nThe Cookie Base\n\n115g Unsalted Butter (softened)\n20g Brown Sugar\n80g Granulated Sugar\n25g Honey\n1 Large Egg (room temp)\n5g Vanilla Extract\n120g All-Purpose Flour\n33g Cocoa Powder\n3g Baking Soda\n3g Salt\n50g Dark Chocolate Chips\n\n\n\nThe Filling\n\nKataifi (I substituted with shredded phyllo pastry)\nA knob of butter (for toasting)\nPistachio Paste\n\n\n\n\n\nInstructions\n\nIn a stand mixer fitted with a paddle attachment, cream together butter, brown sugar, granulated sugar, and honey on medium speed until light and fluffy (3-5 minutes).\nAdd in egg and vanilla and beat until combined. Scrape down the sides of the bowl occasionally for even mixing.\nIn a separate bowl, combine the dry ingredients (flour, cocoa powder, baking soda, and salt).\nSlowly add the dry mixture to the butter mixture until combined while mixing on low speed.\nStir in the chocolate chips.\nPreheat the oven to 375°F / 190°C. Line two baking sheets with parchment paper.\nScoop 1½ tablespoon-sized balls of dough on the cookie sheet, placing them about 2 inches apart.\nBake for 10 minutes or until cookie edges are firm and the center appears dry.\nLet cool on the sheets for 5 minutes before transferring to wire racks to continue cooling.\n\n\nThe Filling & Assembly\n\nTo make the filling, sauté kataifi in a pan with a little butter until golden brown and crispy.\nMix the crispy kataifi with pistachio paste until it forms a thick, spreadable consistency.\nPro-tip: To stuff the cookies, created a little divot with a small round spoon, and place place a teaspoon of the pistachio-kataifi mixture in the center.\n\n\n\n\n\n\n\nMaking small divots\n\n\n\n\n\n\n\nFilling the cookies\n\n\n\n\n\n\nDecorate the top with some melted chocolate and gold, and enjoy!\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "recipes.html",
-    "href": "recipes.html",
-    "title": "Recipes",
-    "section": "",
-    "text": "Aside from data science and sports, I love to cook and bake. Fun fact, I was actually a contestant on The Great Canadian Baking Show Season 9!\nYou can read my official baker bio here or watch the season for free on CBC Gem.\nExplore some of my favourite original recipes below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDubai Chocolate Cookies\n\n\nA decadent fusion of rich cocoa and the signature crunch of pistachio kataifi\n\n\n\nFeb 18, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMatcha Wreath Babka\n\n\nA vibrant, earthy twist on the classic festive bread\n\n\n\nDec 25, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "recipe_list/matcha_babka.html",
-    "href": "recipe_list/matcha_babka.html",
-    "title": "Matcha Wreath Babka",
-    "section": "",
-    "text": "Matcha babka wreath for my Christmas brunch.\n\n\nThis Christmas, I decided to depart from the traditional rich chocolate babka and experiment with something more vibrant. Inspired by Sherry’s Chocolate Babka, this version swaps out cocoa for matcha, resulting in a beautifully braided wreath with a striking green interior and a sophisticated, earthy sweetness.\n\n\nTime\n4 hours\n\n\n\nIngredients\n\nThe Brioche Dough\n\n75g Whole Eggs (save the leftover egg for egg wash)\n18g Egg Yolk\n81g Cold Milk\n\n81g Cold Water\n193g Bread Flour\n\n193g All-Purpose Flour\n6g Salt\n11g Milk Powder\n\n51g Sugar\n\n1g Matcha power\n\n6g Instant Yeast\n77g Unsalted Butter (soften)\n\n\n\nMatcha Filling\n\n39g Unsalted Butter\n\n95g White Chocolate\n33g Sugar\n13g Matcha Powder\n\n\n\n\n\nInstructions\n\nIn a standmixer bowl with dough attachment, add in whole eggs, egg yolk, milk, water, bread flour, all purpose flour, salt, milk powder, sugar and matcha power. Mix on low speed (speed 2) until dough forms.\nAdd in instant yeast. Mix until combined.\nChill dough in fridge for 20 minutes.\nMix on medium speed (speed 4) for ~5 minutes; look for stretchy dough but not window pane yet.\nAdd in soften butter, mix on low speed (speed 2) until butter is incorporated. Then mix on medium speed (speed 4) until window pane consistency is reached (~5-10 minutes).\nPut dough into a greased bowl; let it proof until doubled in size (~1 hour).\nDegas dough and roll out to a 21x15 inch (53x38cm) rectangle.\nSpread matcha filling onto the dough evenly.\nRoll up the dough into a log, fairly tightly.\nCut log down the middle, and braid to form into a wreath shape.\nProof until double in size (~45-60 minutes). Brush on egg wash before baking.\nPreheat the oven to 350°F / 180°C, bake for 25-30 minutes on the middle to lower rack. After about 10 minutes, when the surface is coloured, cover with foil to prevent the top from being burnt.\n\n\nMatcha Filling\n\nAdd all ingredients into a bowl and melt over a double broiler until paste forms, set aside. Warm it up if paste is too thick and chill in the fridge if the paste is too thin. You want a spreadable consistency.\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "project_list/hotdog_predictor.html",
-    "href": "project_list/hotdog_predictor.html",
-    "title": "Hotdog Predictor",
-    "section": "",
-    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data."
-  },
-  {
-    "objectID": "project_list/hotdog_predictor.html#credit",
-    "href": "project_list/hotdog_predictor.html#credit",
-    "title": "Hotdog Predictor",
-    "section": "Credit",
-    "text": "Credit\nCollaborator: Built with Zaki Aslam, Hector Palafox Prieto, and Samrawit Mezgebo Tsegay\nView Repository"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "👋 Hi, it’s Jennifer!",
-    "section": "",
-    "text": "Back to top"
+    "text": "Credit\nCollaborators: Built with medical students Abhinav Aggarwal, Kevin Dong, and William Lee, and Registered Nurse Lila Chan.\nView Live App | View Repository"
   },
   {
     "objectID": "blog_list/alphafold.html",
@@ -145,5 +61,138 @@
     "title": "The Art of Folding",
     "section": "Why This Changes Everything",
     "text": "Why This Changes Everything\nIn 2024, the founders and developers of AlphaFold from Google DeepMind, Demis Hassabis and John Jumper, were awarded the Nobel Prize in Chemistry (Nobel Prize Outreach 2024). They were recognized for solving a problem that scientists have been struggling with for the past five decades.\nSince then, AlphaFold has been used worldwide by more than three million researchers from over 190 countries (Google DeepMind 2024). This advancement is monumental, allowing scientists to design new proteins with desired functions and structures. A process that used to take years to solve now only takes minutes, calculated by a computer (Google DeepMind 2024). This breakthrough enables potential applications in drug development, diseases research, and protein engineering:\n\nAccelerated Drug Discovery: Traditionally, designing a drug is like trying to make a key for a lock you can’t see. With AlphaFold, we can now “see” the lock (the protein structure) right away, allowing us to design better medicines faster.\nDiseases Research: Many diseases affect developing countries that do not have enough funding for expensive experimental research. Machine learning makes studying these pathogens cheaper and more accessible compared to traditional lab techniques.\nEnvironmental Solutions: Scientists are currently engineering proteins that can digest plastic waste. Knowing the structure is the first step to creating these “super-enzymes” that could help clean up the waste in our lands and oceans.\n\nThis represents a major leap not just in medicine, but also in biotechnology, agriculture, and the environment."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "👋 Hi, it’s Jennifer!",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "project_list/movie_prediction.html",
+    "href": "project_list/movie_prediction.html",
+    "title": "Predicting High Movie Ratings",
+    "section": "",
+    "text": "Overview\nIn production recommendation systems, understanding user preferences before they make a choice is critical. Using a massive Kaggle Movie Rating Dataset, this project frames preference prediction strictly as a binary classification task: will a user rate a movie as “high” (ratings \\(\\ge 4\\)) or not? Processing over 10 million historical ratings, the eXtreme Gradient Boosting (XGBoost) model successfully captured non-linear user-genre interactions, achieving a test accuracy of 71.4%.\n\n\n\nFeature Engineering & Data Leakage Prevention\nThe primary challenge of this project was engineering high-signal features while strictly preventing data leakage in a simulated online prediction setting.\nTo safely capture historical behavior without exposing the model to future data, I used chronologically sorted data with a 1-step lag (shift(1)) and expanding windows. Key engineered features include:\n\nUser Historical Average: The average rating a user gave prior to the current timestamp.\nMovie Historical Average: The public’s average rating for the movie prior to the current timestamp.\nUser Genre Affinity: A personalized metric measuring a user’s historical success rate with specific genres (e.g., Action, Sci-Fi) to capture individualized taste without relying on standard collaborative filtering.\n\n\n\nModel Implementation\nI benchmarked two classification algorithms to establish a strong linear baseline and then capture complex interactions:\n\nLogistic Regression from sklearn.linear_model import LogisticRegression\nGradient Boosted Decision Tree from xgboost import XGBClassifier\n\n\n\nTemporal Validation & Hyperparameter Optimization\nBecause this data is time-dependent, standard random cross-validation would introduce look-ahead bias. Instead, I implemented a TimeSeriesSplit to strictly validate the model moving forward in time.\nTo process the 10-million-row dataset without exhausting system memory, hyperparameter tuning focused heavily on computational efficiency, specifically optimizing subsample and colsample_bytree to train the ensemble model on lean, randomized subsets of data.\n\n\nFeature Importance\nTo understand the drivers behind the model’s predictions, I analyzed XGBoost’s built-in feature importances. This revealed that the engineered user_genre_affinity and movie_historical_avg were the strongest indicators of a high rating.\n\n\n\nFuture Work & System Optimization\nWhile the current XGBoost model establishes a robust baseline, several avenues exist for improving both predictive accuracy and computational efficiency in future iterations.\n\nAdvanced Feature Engineering: Movie titles in the dataset currently contain the release year. Extracting this year could unveil temporal user preferences (e.g., differentiating between users who strictly prefer modern releases versus those with a high affinity for older classics).\nHigh-Dimensional Data Integration: Integrating the genome_scores and genome_tags datasets would introduce highly complex, non-linear relationships. To manage memory overhead, I plan to implement Principal Component Analysis (PCA) to compress these latent features into a smaller number of dense, highly predictive components.\nAddressing Concept Drift: To ensure the model remains responsive to changing trends, future training pipelines will implement dynamic sample weighting, where recent interactions are penalized less heavily than older interactions.\nMLOps & Productionization: The iterative nature of Jupyter Notebooks inherently retains variables in memory, leading to Kernel Out-of-Memory (OOM) crashes. The next phase will refactor the pipeline into modular Python scripts (.py), allowing memory to be aggressively cleared between extraction, preprocessing, and training stages.\n\n\n\n\nReflection\nHandling a dataset of over 10 million rows made this one of the most rigorous technical challenges I’ve encountered in my Master of Data Science journey. It required writing highly memory-efficient pandas code, managing iterative garbage collection, and thinking deeply about how time and historical context shape machine learning pipelines in a production environment.\nView Repository\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project_list/hotdog_predictor.html",
+    "href": "project_list/hotdog_predictor.html",
+    "title": "Hotdog Predictor",
+    "section": "",
+    "text": "Can a business name reveal what’s on the menu? This project explores text-based classification using the City of Vancouver’s Street Food Vending dataset.\nI engineered a binary target from vendor descriptions and trained multiple models, including Decision Trees and Logistic Regression, to identify hot dog vendors based solely on their business names. After rigorous cross-validation, a tuned Naïve Bayes classifier emerged as the top performer with 79% accuracy. The project highlights the challenges of imbalanced datasets and the nuances of classifying minority target classes in urban data."
+  },
+  {
+    "objectID": "project_list/hotdog_predictor.html#credit",
+    "href": "project_list/hotdog_predictor.html#credit",
+    "title": "Hotdog Predictor",
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Zaki Aslam, Hector Palafox Prieto, and Samrawit Mezgebo Tsegay\nView Repository"
+  },
+  {
+    "objectID": "project_list/bean_and_brew.html#credit",
+    "href": "project_list/bean_and_brew.html#credit",
+    "title": "Bean and Brew",
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Jessie Liang.\nView Repository"
+  },
+  {
+    "objectID": "recipe_list/dubai_chocolate_cookie.html",
+    "href": "recipe_list/dubai_chocolate_cookie.html",
+    "title": "Dubai Chocolate Cookies",
+    "section": "",
+    "text": "Double chocolate cookies stuffed with pistachio and kataifi.\n\n\nThis recipe takes the viral “Dubai Chocolate” flavours and reimagines them in a cookie format. The base is a a delicious double chocolate chip cookie adapted from Preppy Kitchen, providing a soft and fudgy contrast to the unique textures of toasted kataifi and pistachio paste.\n\n\nTime\n1 hour\n\n\n\nIngredients\n\nThe Cookie Base\n\n115g Unsalted Butter (softened)\n20g Brown Sugar\n80g Granulated Sugar\n25g Honey\n1 Large Egg (room temp)\n5g Vanilla Extract\n120g All-Purpose Flour\n33g Cocoa Powder\n3g Baking Soda\n3g Salt\n50g Dark Chocolate Chips\n\n\n\nThe Filling\n\nKataifi (I substituted with shredded phyllo pastry)\nA knob of butter (for toasting)\nPistachio Paste\n\n\n\n\n\nInstructions\n\nIn a stand mixer fitted with a paddle attachment, cream together butter, brown sugar, granulated sugar, and honey on medium speed until light and fluffy (3-5 minutes).\nAdd in egg and vanilla and beat until combined. Scrape down the sides of the bowl occasionally for even mixing.\nIn a separate bowl, combine the dry ingredients (flour, cocoa powder, baking soda, and salt).\nSlowly add the dry mixture to the butter mixture until combined while mixing on low speed.\nStir in the chocolate chips.\nPreheat the oven to 375°F / 190°C. Line two baking sheets with parchment paper.\nScoop 1½ tablespoon-sized balls of dough on the cookie sheet, placing them about 2 inches apart.\nBake for 10 minutes or until cookie edges are firm and the center appears dry.\nLet cool on the sheets for 5 minutes before transferring to wire racks to continue cooling.\n\n\nThe Filling & Assembly\n\nTo make the filling, sauté kataifi in a pan with a little butter until golden brown and crispy.\nMix the crispy kataifi with pistachio paste until it forms a thick, spreadable consistency.\nPro-tip: To stuff the cookies, created a little divot with a small round spoon, and place place a teaspoon of the pistachio-kataifi mixture in the center.\n\n\n\n\n\n\n\nMaking small divots\n\n\n\n\n\n\n\nFilling the cookies\n\n\n\n\n\n\nDecorate the top with some melted chocolate and gold, and enjoy!\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "recipes.html",
+    "href": "recipes.html",
+    "title": "Recipes",
+    "section": "",
+    "text": "Aside from data science and sports, I love to cook and bake. Fun fact, I was actually a contestant on The Great Canadian Baking Show Season 9!\nYou can read my official baker bio here or watch the season for free on CBC Gem.\nExplore some of my favourite original recipes below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDubai Chocolate Cookies\n\n\nA decadent fusion of rich cocoa and the signature crunch of pistachio kataifi\n\n\n\nFeb 18, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nMatcha Wreath Babka\n\n\nA vibrant, earthy twist on the classic festive bread\n\n\n\nDec 25, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "recipe_list/matcha_babka.html",
+    "href": "recipe_list/matcha_babka.html",
+    "title": "Matcha Wreath Babka",
+    "section": "",
+    "text": "Matcha babka wreath for my Christmas brunch.\n\n\nThis Christmas, I decided to depart from the traditional rich chocolate babka and experiment with something more vibrant. Inspired by Sherry’s Chocolate Babka, this version swaps out cocoa for matcha, resulting in a beautifully braided wreath with a striking green interior and a sophisticated, earthy sweetness.\n\n\nTime\n4 hours\n\n\n\nIngredients\n\nThe Brioche Dough\n\n75g Whole Eggs (save the leftover egg for egg wash)\n18g Egg Yolk\n81g Cold Milk\n\n81g Cold Water\n193g Bread Flour\n\n193g All-Purpose Flour\n6g Salt\n11g Milk Powder\n\n51g Sugar\n\n1g Matcha power\n\n6g Instant Yeast\n77g Unsalted Butter (soften)\n\n\n\nMatcha Filling\n\n39g Unsalted Butter\n\n95g White Chocolate\n33g Sugar\n13g Matcha Powder\n\n\n\n\n\nInstructions\n\nIn a standmixer bowl with dough attachment, add in whole eggs, egg yolk, milk, water, bread flour, all purpose flour, salt, milk powder, sugar and matcha power. Mix on low speed (speed 2) until dough forms.\nAdd in instant yeast. Mix until combined.\nChill dough in fridge for 20 minutes.\nMix on medium speed (speed 4) for ~5 minutes; look for stretchy dough but not window pane yet.\nAdd in soften butter, mix on low speed (speed 2) until butter is incorporated. Then mix on medium speed (speed 4) until window pane consistency is reached (~5-10 minutes).\nPut dough into a greased bowl; let it proof until doubled in size (~1 hour).\nDegas dough and roll out to a 21x15 inch (53x38cm) rectangle.\nSpread matcha filling onto the dough evenly.\nRoll up the dough into a log, fairly tightly.\nCut log down the middle, and braid to form into a wreath shape.\nProof until double in size (~45-60 minutes). Brush on egg wash before baking.\nPreheat the oven to 350°F / 180°C, bake for 25-30 minutes on the middle to lower rack. After about 10 minutes, when the surface is coloured, cover with foil to prevent the top from being burnt.\n\n\nMatcha Filling\n\nAdd all ingredients into a bowl and melt over a double broiler until paste forms, set aside. Warm it up if paste is too thick and chill in the fridge if the paste is too thin. You want a spreadable consistency.\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRelationship Botany\n\n\nA Pixel-Art Personality Quiz Exploring Attachment Styles\n\n\n\nMar 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nCulinary Cosmos\n\n\nMapping The Flavor Bible into a 3D High-Dimensional Knowledge Graph\n\n\n\nFeb 21, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting High Movie Ratings\n\n\nFeature Engineering and Binary Classification with XGBoost\n\n\n\nFeb 10, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nPredicting Credit Card Defaults\n\n\nRisk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability\n\n\n\nDec 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHotdog Predictor\n\n\nPredicting hotdog vendors through NLP and classification\n\n\n\nDec 7, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nBean and Brew\n\n\nA statistical analysis on sustainability & profitability for a coffee shop submitted at the UBC WiDS hackathon\n\n\n\nNov 22, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "project_list/flavour_network.html",
+    "href": "project_list/flavour_network.html",
+    "title": "Culinary Cosmos",
+    "section": "",
+    "text": "Web App"
+  },
+  {
+    "objectID": "project_list/flavour_network.html#credit",
+    "href": "project_list/flavour_network.html#credit",
+    "title": "Culinary Cosmos",
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Arnold Ying.\nView Repository"
+  },
+  {
+    "objectID": "project_list/relationship_botany.html",
+    "href": "project_list/relationship_botany.html",
+    "title": "Relationship Botany",
+    "section": "",
+    "text": "View Figma Prototype\n\nOverview\nPsychology and self-discovery can often feel clinical or intimidating. Built during a 3-hour Mini Figma Hackathon, this project aimed to make understanding your attachment style accessible, delightful, and highly shareable. By leaning into the universal metaphor of plant care, Relationship Botany is an interactive, mobile-first prototype that dynamically maps your relationship needs to the perfect houseplant.\n\n\n\nDesign & UX Strategy\nTo move from concept to a polished MVP under three hours, I focused on high-impact visual storytelling and seamless prototyping:\n\nCozy Indie Aesthetic: Designed entirely with a cohesive 2D pixel-art style. The UI utilizes an earthy, calming palette of sage greens and terracotta oranges to create a warm gaming environment.\nDynamic Storytelling: Instead of a standard progress bar, the quiz features a dynamic plant avatar. Utilizing Figma’s Smart Animate, a tiny pixelated seed smoothly sprouts, grows a stem, and forms a bud as the user advances through the 10 questions.\nTactile Micro-Interactions: Built custom master components for the answer cards featuring distinct Hover and Pressed states to give the user satisfying visual feedback.\n\n\n\nThe Botanical Matches\nThe quiz runs on a “Majority Rules” logic engine, assessing situational relationship questions to generate one of four results:\n\nThe Sunflower (Secure): Resilient, deep-rooted, and naturally turns toward the light.\nThe Fern (Anxious): Beautiful and caring, but highly sensitive and requires a consistent, reassuring environment.\nThe Cactus (Avoidant): Fiercely independent, self-reliant, and needs plenty of space to thrive.\nThe Orchid (Fearful-Avoidant): Deeply rewarding but complex, requiring a delicate balance of care and boundaries.\n\n\n\n\nReflection\nThis was a incredibly fun, fast-paced challenge. Constraining the timeline to just three hours forced me to prioritize the core user experience, leverage Figma AI for rapid asset generation, and focus on the micro-interactions that make a prototype feel like a fully coded product.\nView Repository\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project_list/credit-card-default-classfication.html#credit",
+    "href": "project_list/credit-card-default-classfication.html#credit",
+    "title": "Predicting Credit Card Defaults",
+    "section": "Credit",
+    "text": "Credit\nCollaborator: Built with Nicole Link.\nView Respository"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Jennifer Tsang, nice to meet you!\nI hold a Bachelor’s in Biomedical Engineering and am currently pursuing a Master’s in Data Science at the University of British Columbia.\nMy interests lie in biostatistics, data-driven healthcare, and bridging the gap between healthcare and data science."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nUniversity of British Columbia\n\nVancouver, BC\nM.Sc. in Data Science | 2025 - 2026\n\nUniversity of British Columbia\n\nVancouver, BC\nB.A.Sc. in Biomedical Engineering | 2018 - 2023"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "About",
+    "section": "Experience",
+    "text": "Experience\n\nCognitive Neuroscience of Schizophrenia Lab\n\n\nBC Children’s Hospital Research Institute\n\nResearch Assistant | May 2024 - September 2025\nProcess, analyze, and visualize fMRI brain images using statistical and machine learning algorithms.\nSkills: MATLAB, SPSS, constrained Principal Component Analysis (cPCA), fMRI Data Analysis, Manuscript Writing\n\nComputational Ophthalmic Imaging Lab\n\n\nEye Care Centre, Vancouver General Hospital\n\nResearch Assistant | October 2024 - April 2025\nApply multi-volume registration and coefficient of variance (CoV) to quantify retinal capillary perfusion on optical coherence tomography angiography (OCTA) data.\nSkills: Data Acquisition, Data Processing, Signal Processing Algorithms, Literature Review"
+  },
+  {
+    "objectID": "about.html#publication",
+    "href": "about.html#publication",
+    "title": "About",
+    "section": "Publication",
+    "text": "Publication\nRedway, S., Jian, L., Yip, L., Tsang, J., & Woodward, T. S. (2025). Cognitive Mode Detectable with Task-Based fMRI: Default Mode A (DMA). PsyArXiv.\nRedway, S., Arreaza, L., Shahki, J., Zeng, E., Tsang, J., & Woodward, T. S. (2024). Cognitive Mode Detectable with Task-Based fMRI: Re-Evaluation (RE-EV). PsyArXiv."
+  },
+  {
+    "objectID": "dashboard_list/vancouver_crimes.html#credit",
+    "href": "dashboard_list/vancouver_crimes.html#credit",
+    "title": "Vancouver Crime Watch",
+    "section": "Credit",
+    "text": "Credit\nCollaborators: Built with Sarisha Das, Prabuddha Tamhane, and Nour Shawky.\nView Live App | View Repository"
+  },
+  {
+    "objectID": "dashboards.html",
+    "href": "dashboards.html",
+    "title": "Dashboards",
+    "section": "",
+    "text": "Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the dashboards she has built using Shiny in Python and R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVancouver Crime Watch\n\n\nInteractive geospatial dashboard for visualizing crime patterns across Vancouver neighbourhoods\n\n\n\nMar 15, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n\nBreast Cancer Diagnostics\n\n\nAn Explainable AI ensemble for FNA-based screening using supervised and unsupervised learning\n\n\n\nMar 8, 2026\n\n\n\n\n\n\nNo matching items\n Back to top"
   }
 ]

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2026-02-21">
 
-<title>Bean and Brew</title>
+<title>Culinary Cosmos</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -303,9 +303,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
-  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-engineering-knowledge-extraction" id="toc-data-engineering-knowledge-extraction" class="nav-link" data-scroll-target="#data-engineering-knowledge-extraction">Data Engineering &amp; Knowledge Extraction</a></li>
+  <li><a href="#technical-implementation" id="toc-technical-implementation" class="nav-link" data-scroll-target="#technical-implementation">Technical Implementation</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
   <ul class="collapse">
   <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
   </ul></li>
@@ -318,8 +319,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bean and Brew</h1>
-<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
+<h1 class="title">Culinary Cosmos</h1>
+<p class="subtitle lead">Mapping The Flavor Bible into a 3D High-Dimensional Knowledge Graph</p>
 </div>
 
 
@@ -330,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2025</p>
+      <p class="date">February 21, 2026</p>
     </div>
   </div>
   
@@ -342,37 +343,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
-<section id="impact-results" class="level1">
-<h1>Impact &amp; Results</h1>
-<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
+<p><img src="../img/projects/flavour-network.png" class="img-fluid"></p>
+<p><a href="https://culinary-cosmos.vercel.app/">Web App</a></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>Traditional cookbooks are static, yet flavour pairing is a dynamic, multi-dimensional science. Built during the <strong>Composer Hackathon Vancouver</strong>, this project transforms the 900+ pages of culinary expertise in <em>The Flavor Bible</em> into an interactive, 3D “Galaxy.” By treating ingredients as nodes and their affinities as edges, we created a tool that allows chefs and home cooks to navigate flavour profiles through visual exploration rather than manual cross-referencing.</p>
+<hr>
 </section>
-<section id="the-challenge" class="level1">
-<h1>The Challenge</h1>
-<ul>
-<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
-<li>Trying to strike the balance between environmental protection and profit generation.</li>
-</ul>
+<section id="data-engineering-knowledge-extraction" class="level1">
+<h1>Data Engineering &amp; Knowledge Extraction</h1>
+<p>The primary challenge was converting unstructured text from a 900-page reference book into a queryable graph format. We implemented a custom parsing pipeline to extract:</p>
+<ol type="1">
+<li><strong>Entities:</strong> Individual ingredients (2,000+ nodes).</li>
+<li><strong>Affinities:</strong> The strength of pairings, represented by edge weights.</li>
+<li><strong>Categories:</strong> Grouping ingredients into “constellations” based on food groups.</li>
+</ol>
+<p>To refine the graph, we addressed <strong>Entity Resolution</strong>—ensuring that variations in naming (e.g., “Lemon Juice” vs.&nbsp;“Lemon”) were mapped correctly to maintain graph density and avoid fragmented nodes.</p>
 </section>
-<section id="what-we-did" class="level1">
-<h1>What we did</h1>
+<section id="technical-implementation" class="level1">
+<h1>Technical Implementation</h1>
+<p>The project was built using a “human-in-the-loop” AI development workflow, leveraging <strong>Cursor Composer 1.5</strong> to accelerate the transition from data script to live web application.</p>
 <ul>
-<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
-<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
-<li><p><strong>Statistical analysis</strong>: z-test</p></li>
-<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
+<li><strong>Frontend:</strong> React-based architecture deployed on <strong>Vercel</strong>.</li>
+<li><strong>Graph Engine:</strong> A high-performance 3D force-directed graph to handle thousands of real-time physics-based connections.</li>
+<li><strong>UI/UX:</strong> A “Dark Matter” aesthetic where ingredient centrality is visually represented by node size and luminosity.</li>
 </ul>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>As someone who bakes and cooks almost every day, this project was a bridge between my Masters in Data Science studies and my personal passions. It proved that complex datasets—when treated as an experience rather than a table—can unlock entirely new ways of interacting with information.</p>
 <section id="credit" class="level2">
 <h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Jessie Liang.</p>
-<p><a href="https://github.com/jentsang/bean-and-brew">View Repository</a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_pres.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_award.jpg" class="img-fluid"></p>
-</div>
-</div>
+<p>Collaborator: Built with Arnold Ying.</p>
+<p><a href="https://github.com/jentsang/CulinaryCosmos">View Repository</a></p>
 
 
 </section>

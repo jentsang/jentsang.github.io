@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2026-03-08">
 
-<title>Bean and Brew</title>
+<title>Breast Cancer Diagnostics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -303,9 +303,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
-  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a>
+  <li><a href="#demo" id="toc-demo" class="nav-link active" data-scroll-target="#demo">Demo</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#triple-validation-ensemble-logic" id="toc-triple-validation-ensemble-logic" class="nav-link" data-scroll-target="#triple-validation-ensemble-logic">Triple-Validation Ensemble Logic</a></li>
+  <li><a href="#explainable-ai-spatial-justification" id="toc-explainable-ai-spatial-justification" class="nav-link" data-scroll-target="#explainable-ai-spatial-justification">Explainable AI &amp; Spatial Justification</a></li>
+  <li><a href="#interdisciplinary-collaboration" id="toc-interdisciplinary-collaboration" class="nav-link" data-scroll-target="#interdisciplinary-collaboration">Interdisciplinary Collaboration</a></li>
+  <li><a href="#performance-reliability" id="toc-performance-reliability" class="nav-link" data-scroll-target="#performance-reliability">Performance &amp; Reliability</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
   <ul class="collapse">
   <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
   </ul></li>
@@ -318,8 +322,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bean and Brew</h1>
-<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
+<h1 class="title">Breast Cancer Diagnostics</h1>
+<p class="subtitle lead">An Explainable AI ensemble for FNA-based screening using supervised and unsupervised learning</p>
 </div>
 
 
@@ -330,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2025</p>
+      <p class="date">March 8, 2026</p>
     </div>
   </div>
   
@@ -342,37 +346,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
-<section id="impact-results" class="level1">
-<h1>Impact &amp; Results</h1>
-<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
+<section id="demo" class="level1">
+<h1>Demo</h1>
+<p><img src="../img/dashboards/breast_cancer_diagnostics_demo.gif" class="img-fluid"></p>
 </section>
-<section id="the-challenge" class="level1">
-<h1>The Challenge</h1>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>In clinical diagnostics, a “black-box” prediction isn’t enough, clinicians need to know <em>why</em> an AI flagged a case as malignant. Developed during the <strong>National Canadian Medical Datathon 2026</strong>, this project aims to bridge the gap between machine learning and clinical intuition. We built a <strong>Triple-Validation Ensemble</strong> that provides a high-sensitivity diagnostic “second opinion” for breast cancer screenings.</p>
+<hr>
+</section>
+<section id="triple-validation-ensemble-logic" class="level1">
+<h1>Triple-Validation Ensemble Logic</h1>
+<p>Built with <strong>Shiny for Python</strong>, the core engine contains three distinct machine learning models to make predictions:</p>
 <ul>
-<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
-<li>Trying to strike the balance between environmental protection and profit generation.</li>
+<li><p><strong>Supervised Layer (XGBoost):</strong> Optimized for <strong>95% sensitivity (recall)</strong> to prioritize the detection of malignant cases and minimize dangerous false negatives.</p></li>
+<li><p><strong>Global Topology (GMM):</strong> An unsupervised Gaussian Mixture Model that identifies the mathematical “territory” of Benign vs.&nbsp;Malignant morphology.</p></li>
+<li><p><strong>Sub-type Clustering:</strong> A specialized GMM that identifies morphological patterns within malignant cells, acting as an anomaly detector to flag atypical cases.</p></li>
 </ul>
 </section>
-<section id="what-we-did" class="level1">
-<h1>What we did</h1>
+<section id="explainable-ai-spatial-justification" class="level1">
+<h1>Explainable AI &amp; Spatial Justification</h1>
+<p>To move beyond simple probability scores, we implemented a <strong>Spatial Second Opinion</strong> feature to provide transparency for clinicians:</p>
 <ul>
-<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
-<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
-<li><p><strong>Statistical analysis</strong>: z-test</p></li>
-<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
+<li><p><strong>Morphological Mapping:</strong> Using <strong>PCA</strong> for dimensionality reduction, we project 30-dimensional cellular data onto a 2D topological map.</p></li>
+<li><p><strong>Geometric Boundaries:</strong> We utilized <strong>Convex Hulls</strong> to visualize the boundaries of known malignant sub-types. If a patient’s data point falls within these regions, the system provides a visual justification for the diagnosis.</p></li>
+<li><p><strong>Ensemble Consensus Alerts:</strong> Dynamic UI notifications that trigger “Critical” warnings when the supervised model and unsupervised maps disagree, highlighting edge cases for manual pathology review.</p></li>
 </ul>
+</section>
+<section id="interdisciplinary-collaboration" class="level1">
+<h1>Interdisciplinary Collaboration</h1>
+<p>This project was a deep dive into <strong>Human-Centered AI</strong>. By collaborating directly with <strong>medical students</strong> and a <strong>Registered Nurse</strong>, we iteratively refined the dashboard to align with real-world clinical workflows. Their feedback led us to prioritize morphological visualizations over raw metric tables, ensuring the tool provides actionable insights rather than just data.</p>
+</section>
+<section id="performance-reliability" class="level1">
+<h1>Performance &amp; Reliability</h1>
+<p>To ensure the diagnostic hub is production-ready and mathematically sound:</p>
+<ul>
+<li><p><strong>Strict Data Splitting:</strong> Implemented a stratified sampling strategy to ensure the “Demo Cohort” remained entirely out-of-sample, preventing data leakage.</p></li>
+<li><p><strong>Reproducible ML Pipelines:</strong> Leveraged <strong>Joblib</strong> for serialized model deployment and <strong>Scikit-learn</strong> pipelines for consistent feature scaling and PCA transformations.</p></li>
+</ul>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>This project was an incredible opportunity to apply machine learning to a high-stakes domain. It reinforced the importance of <strong>Explainability (XAI)</strong> in healthcare and demonstrated how unsupervised learning can act as a critical safety net for supervised models. Participating in this sprint over <strong>International Women’s Day</strong> weekend highlighted the impact data science can have on improving women’s health outcomes.</p>
 <section id="credit" class="level2">
 <h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Jessie Liang.</p>
-<p><a href="https://github.com/jentsang/bean-and-brew">View Repository</a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_pres.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_award.jpg" class="img-fluid"></p>
-</div>
-</div>
+<p>Collaborators: Built with medical students Abhinav Aggarwal, Kevin Dong, and William Lee, and Registered Nurse Lila Chan.</p>
+<p><a href="https://jentsang-breast-cancer-diagnostic.share.connect.posit.cloud/">View Live App</a> | <a href="https://github.com/jentsang/BreastCancerDiagnostic">View Repository</a></p>
 
 
 </section>

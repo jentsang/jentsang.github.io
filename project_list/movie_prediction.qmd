@@ -1,0 +1,65 @@
+---
+title: "Predicting High Movie Ratings"
+subtitle: "Feature Engineering and Binary Classification with XGBoost"
+date: "2026-02-10"
+image: /img/projects/movie-prediction.jpg
+---
+
+![](/img/projects/movie-prediction.jpg)
+
+# Overview
+In production recommendation systems, understanding user preferences before they make a choice is critical. Using a massive [Kaggle Movie Rating Dataset](https://www.kaggle.com/), this project frames preference prediction strictly as a binary classification task: will a user rate a movie as "high" (ratings $\ge 4$) or not? Processing over 10 million historical ratings, the **eXtreme Gradient Boosting (XGBoost)** model successfully captured non-linear user-genre interactions, achieving a **test accuracy of 71.4%**.
+
+---
+
+# Feature Engineering & Data Leakage Prevention
+The primary challenge of this project was engineering high-signal features while strictly preventing data leakage in a simulated online prediction setting. 
+
+To safely capture historical behavior without exposing the model to future data, I used chronologically sorted data with a 1-step lag (`shift(1)`) and expanding windows. Key engineered features include:
+
+- **User Historical Average**: The average rating a user gave prior to the current timestamp.
+- **Movie Historical Average**: The public's average rating for the movie prior to the current timestamp.
+- **User Genre Affinity**: A personalized metric measuring a user's historical success rate with specific genres (e.g., Action, Sci-Fi) to capture individualized taste without relying on standard collaborative filtering. 
+
+# Model Implementation
+I benchmarked two classification algorithms to establish a strong linear baseline and then capture complex interactions:
+
+1. Logistic Regression `from sklearn.linear_model import LogisticRegression`
+
+2. Gradient Boosted Decision Tree `from xgboost import XGBClassifier`
+
+
+# Temporal Validation & Hyperparameter Optimization
+Because this data is time-dependent, standard random cross-validation would introduce look-ahead bias. Instead, I implemented a `TimeSeriesSplit` to strictly validate the model moving forward in time. 
+
+To process the 10-million-row dataset without exhausting system memory, hyperparameter tuning focused heavily on computational efficiency, specifically optimizing `subsample` and `colsample_bytree` to train the ensemble model on lean, randomized subsets of data.
+
+# Feature Importance
+To understand the drivers behind the model's predictions, I analyzed XGBoost's built-in feature importances. This revealed that the engineered `user_genre_affinity` and `movie_historical_avg` were the strongest indicators of a high rating.
+
+---
+
+# Future Work & System Optimization
+While the current XGBoost model establishes a robust baseline, several avenues exist for improving both predictive accuracy and computational efficiency in future iterations.
+
+- **Advanced Feature Engineering**: Movie titles in the dataset currently contain the release year. Extracting this year could unveil temporal user preferences (e.g., differentiating between users who strictly prefer modern releases versus those with a high affinity for older classics). 
+
+- **High-Dimensional Data Integration**: Integrating the `genome_scores` and `genome_tags` datasets would introduce highly complex, non-linear relationships. To manage memory overhead, I plan to implement **Principal Component Analysis (PCA)** to compress these latent features into a smaller number of dense, highly predictive components.
+
+- **Addressing Concept Drift**: To ensure the model remains responsive to changing trends, future training pipelines will implement dynamic sample weighting, where recent interactions are penalized less heavily than older interactions.
+
+- **MLOps & Productionization**: The iterative nature of Jupyter Notebooks inherently retains variables in memory, leading to Kernel Out-of-Memory (OOM) crashes. The next phase will refactor the pipeline into modular Python scripts (`.py`), allowing memory to be aggressively cleared between extraction, preprocessing, and training stages.
+
+
+---
+
+# Reflection 
+Handling a dataset of over 10 million rows made this one of the most rigorous technical challenges I've encountered in my Master of Data Science journey. It required writing highly memory-efficient pandas code, managing iterative garbage collection, and thinking deeply about how time and historical context shape machine learning pipelines in a production environment. 
+
+[View Repository](https://github.com/jentsang/HighRatingMoviePredictor)
+
+
+
+
+
+

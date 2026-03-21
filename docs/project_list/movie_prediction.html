@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2026-02-10">
 
-<title>Bean and Brew</title>
+<title>Predicting High Movie Ratings</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -303,12 +332,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
-  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a>
-  <ul class="collapse">
-  <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#feature-engineering-data-leakage-prevention" id="toc-feature-engineering-data-leakage-prevention" class="nav-link" data-scroll-target="#feature-engineering-data-leakage-prevention">Feature Engineering &amp; Data Leakage Prevention</a></li>
+  <li><a href="#model-implementation" id="toc-model-implementation" class="nav-link" data-scroll-target="#model-implementation">Model Implementation</a></li>
+  <li><a href="#temporal-validation-hyperparameter-optimization" id="toc-temporal-validation-hyperparameter-optimization" class="nav-link" data-scroll-target="#temporal-validation-hyperparameter-optimization">Temporal Validation &amp; Hyperparameter Optimization</a></li>
+  <li><a href="#feature-importance" id="toc-feature-importance" class="nav-link" data-scroll-target="#feature-importance">Feature Importance</a></li>
+  <li><a href="#future-work-system-optimization" id="toc-future-work-system-optimization" class="nav-link" data-scroll-target="#future-work-system-optimization">Future Work &amp; System Optimization</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -318,8 +348,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bean and Brew</h1>
-<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
+<h1 class="title">Predicting High Movie Ratings</h1>
+<p class="subtitle lead">Feature Engineering and Binary Classification with XGBoost</p>
 </div>
 
 
@@ -330,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2025</p>
+      <p class="date">February 10, 2026</p>
     </div>
   </div>
   
@@ -342,40 +372,57 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
-<section id="impact-results" class="level1">
-<h1>Impact &amp; Results</h1>
-<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
+<p><img src="../img/projects/movie-prediction.jpg" class="img-fluid"></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>In production recommendation systems, understanding user preferences before they make a choice is critical. Using a massive <a href="https://www.kaggle.com/">Kaggle Movie Rating Dataset</a>, this project frames preference prediction strictly as a binary classification task: will a user rate a movie as “high” (ratings <span class="math inline">\(\ge 4\)</span>) or not? Processing over 10 million historical ratings, the <strong>eXtreme Gradient Boosting (XGBoost)</strong> model successfully captured non-linear user-genre interactions, achieving a <strong>test accuracy of 71.4%</strong>.</p>
+<hr>
 </section>
-<section id="the-challenge" class="level1">
-<h1>The Challenge</h1>
+<section id="feature-engineering-data-leakage-prevention" class="level1">
+<h1>Feature Engineering &amp; Data Leakage Prevention</h1>
+<p>The primary challenge of this project was engineering high-signal features while strictly preventing data leakage in a simulated online prediction setting.</p>
+<p>To safely capture historical behavior without exposing the model to future data, I used chronologically sorted data with a 1-step lag (<code>shift(1)</code>) and expanding windows. Key engineered features include:</p>
 <ul>
-<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
-<li>Trying to strike the balance between environmental protection and profit generation.</li>
+<li><strong>User Historical Average</strong>: The average rating a user gave prior to the current timestamp.</li>
+<li><strong>Movie Historical Average</strong>: The public’s average rating for the movie prior to the current timestamp.</li>
+<li><strong>User Genre Affinity</strong>: A personalized metric measuring a user’s historical success rate with specific genres (e.g., Action, Sci-Fi) to capture individualized taste without relying on standard collaborative filtering.</li>
 </ul>
 </section>
-<section id="what-we-did" class="level1">
-<h1>What we did</h1>
-<ul>
-<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
-<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
-<li><p><strong>Statistical analysis</strong>: z-test</p></li>
-<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
-</ul>
-<section id="credit" class="level2">
-<h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Jessie Liang.</p>
-<p><a href="https://github.com/jentsang/bean-and-brew">View Repository</a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_pres.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_award.jpg" class="img-fluid"></p>
-</div>
-</div>
-
-
+<section id="model-implementation" class="level1">
+<h1>Model Implementation</h1>
+<p>I benchmarked two classification algorithms to establish a strong linear baseline and then capture complex interactions:</p>
+<ol type="1">
+<li><p>Logistic Regression <code>from sklearn.linear_model import LogisticRegression</code></p></li>
+<li><p>Gradient Boosted Decision Tree <code>from xgboost import XGBClassifier</code></p></li>
+</ol>
 </section>
+<section id="temporal-validation-hyperparameter-optimization" class="level1">
+<h1>Temporal Validation &amp; Hyperparameter Optimization</h1>
+<p>Because this data is time-dependent, standard random cross-validation would introduce look-ahead bias. Instead, I implemented a <code>TimeSeriesSplit</code> to strictly validate the model moving forward in time.</p>
+<p>To process the 10-million-row dataset without exhausting system memory, hyperparameter tuning focused heavily on computational efficiency, specifically optimizing <code>subsample</code> and <code>colsample_bytree</code> to train the ensemble model on lean, randomized subsets of data.</p>
+</section>
+<section id="feature-importance" class="level1">
+<h1>Feature Importance</h1>
+<p>To understand the drivers behind the model’s predictions, I analyzed XGBoost’s built-in feature importances. This revealed that the engineered <code>user_genre_affinity</code> and <code>movie_historical_avg</code> were the strongest indicators of a high rating.</p>
+<hr>
+</section>
+<section id="future-work-system-optimization" class="level1">
+<h1>Future Work &amp; System Optimization</h1>
+<p>While the current XGBoost model establishes a robust baseline, several avenues exist for improving both predictive accuracy and computational efficiency in future iterations.</p>
+<ul>
+<li><p><strong>Advanced Feature Engineering</strong>: Movie titles in the dataset currently contain the release year. Extracting this year could unveil temporal user preferences (e.g., differentiating between users who strictly prefer modern releases versus those with a high affinity for older classics).</p></li>
+<li><p><strong>High-Dimensional Data Integration</strong>: Integrating the <code>genome_scores</code> and <code>genome_tags</code> datasets would introduce highly complex, non-linear relationships. To manage memory overhead, I plan to implement <strong>Principal Component Analysis (PCA)</strong> to compress these latent features into a smaller number of dense, highly predictive components.</p></li>
+<li><p><strong>Addressing Concept Drift</strong>: To ensure the model remains responsive to changing trends, future training pipelines will implement dynamic sample weighting, where recent interactions are penalized less heavily than older interactions.</p></li>
+<li><p><strong>MLOps &amp; Productionization</strong>: The iterative nature of Jupyter Notebooks inherently retains variables in memory, leading to Kernel Out-of-Memory (OOM) crashes. The next phase will refactor the pipeline into modular Python scripts (<code>.py</code>), allowing memory to be aggressively cleared between extraction, preprocessing, and training stages.</p></li>
+</ul>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>Handling a dataset of over 10 million rows made this one of the most rigorous technical challenges I’ve encountered in my Master of Data Science journey. It required writing highly memory-efficient pandas code, managing iterative garbage collection, and thinking deeply about how time and historical context shape machine learning pipelines in a production environment.</p>
+<p><a href="https://github.com/jentsang/HighRatingMoviePredictor">View Repository</a></p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

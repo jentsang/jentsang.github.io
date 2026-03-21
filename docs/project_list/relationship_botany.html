@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2026-03-19">
 
-<title>Bean and Brew</title>
+<title>Relationship Botany</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -303,12 +303,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
-  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a>
-  <ul class="collapse">
-  <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#design-ux-strategy" id="toc-design-ux-strategy" class="nav-link" data-scroll-target="#design-ux-strategy">Design &amp; UX Strategy</a></li>
+  <li><a href="#the-botanical-matches" id="toc-the-botanical-matches" class="nav-link" data-scroll-target="#the-botanical-matches">The Botanical Matches</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -318,8 +316,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bean and Brew</h1>
-<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
+<h1 class="title">Relationship Botany</h1>
+<p class="subtitle lead">A Pixel-Art Personality Quiz Exploring Attachment Styles</p>
 </div>
 
 
@@ -330,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2025</p>
+      <p class="date">March 19, 2026</p>
     </div>
   </div>
   
@@ -342,40 +340,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
-<section id="impact-results" class="level1">
-<h1>Impact &amp; Results</h1>
-<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
-</section>
-<section id="the-challenge" class="level1">
-<h1>The Challenge</h1>
-<ul>
-<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
-<li>Trying to strike the balance between environmental protection and profit generation.</li>
-</ul>
-</section>
-<section id="what-we-did" class="level1">
-<h1>What we did</h1>
-<ul>
-<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
-<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
-<li><p><strong>Statistical analysis</strong>: z-test</p></li>
-<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
-</ul>
-<section id="credit" class="level2">
-<h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Jessie Liang.</p>
-<p><a href="https://github.com/jentsang/bean-and-brew">View Repository</a></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_pres.jpg" class="img-fluid"></p>
+<p><img src="../img/projects/botany-main.png" class="img-fluid"></p>
 </div><div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_award.jpg" class="img-fluid"></p>
+<p><img src="../img/projects/botany-results.png" class="img-fluid"></p>
 </div>
 </div>
-
-
+<p><a href="https://safari-jog-16403291.figma.site/">View Figma Prototype</a></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>Psychology and self-discovery can often feel clinical or intimidating. Built during a 3-hour Mini Figma Hackathon, this project aimed to make understanding your attachment style accessible, delightful, and highly shareable. By leaning into the universal metaphor of plant care, <strong>Relationship Botany</strong> is an interactive, mobile-first prototype that dynamically maps your relationship needs to the perfect houseplant.</p>
+<hr>
 </section>
+<section id="design-ux-strategy" class="level1">
+<h1>Design &amp; UX Strategy</h1>
+<p>To move from concept to a polished MVP under three hours, I focused on high-impact visual storytelling and seamless prototyping:</p>
+<ul>
+<li><p><strong>Cozy Indie Aesthetic:</strong> Designed entirely with a cohesive 2D pixel-art style. The UI utilizes an earthy, calming palette of sage greens and terracotta oranges to create a warm gaming environment.</p></li>
+<li><p><strong>Dynamic Storytelling:</strong> Instead of a standard progress bar, the quiz features a dynamic plant avatar. Utilizing Figma’s <strong>Smart Animate</strong>, a tiny pixelated seed smoothly sprouts, grows a stem, and forms a bud as the user advances through the 10 questions.</p></li>
+<li><p><strong>Tactile Micro-Interactions:</strong> Built custom master components for the answer cards featuring distinct Hover and Pressed states to give the user satisfying visual feedback.</p></li>
+</ul>
+</section>
+<section id="the-botanical-matches" class="level1">
+<h1>The Botanical Matches</h1>
+<p>The quiz runs on a “Majority Rules” logic engine, assessing situational relationship questions to generate one of four results:</p>
+<ol type="1">
+<li><strong>The Sunflower (Secure):</strong> Resilient, deep-rooted, and naturally turns toward the light.</li>
+<li><strong>The Fern (Anxious):</strong> Beautiful and caring, but highly sensitive and requires a consistent, reassuring environment.</li>
+<li><strong>The Cactus (Avoidant):</strong> Fiercely independent, self-reliant, and needs plenty of space to thrive.</li>
+<li><strong>The Orchid (Fearful-Avoidant):</strong> Deeply rewarding but complex, requiring a delicate balance of care and boundaries.</li>
+</ol>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>This was a incredibly fun, fast-paced challenge. Constraining the timeline to just three hours forced me to prioritize the core user experience, leverage Figma AI for rapid asset generation, and focus on the micro-interactions that make a prototype feel like a fully coded product.</p>
+<p><a href="https://github.com/jentsang/RelationshipBotany">View Repository</a></p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-22">
+<meta name="dcterms.date" content="2026-03-15">
 
-<title>Bean and Brew</title>
+<title>Vancouver Crime Watch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -303,9 +303,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#impact-results" id="toc-impact-results" class="nav-link active" data-scroll-target="#impact-results">Impact &amp; Results</a></li>
-  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge">The Challenge</a></li>
-  <li><a href="#what-we-did" id="toc-what-we-did" class="nav-link" data-scroll-target="#what-we-did">What we did</a>
+  <li><a href="#demo" id="toc-demo" class="nav-link active" data-scroll-target="#demo">Demo</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#interactive-dashboard-geospatial-analysis" id="toc-interactive-dashboard-geospatial-analysis" class="nav-link" data-scroll-target="#interactive-dashboard-geospatial-analysis">Interactive Dashboard &amp; Geospatial Analysis</a></li>
+  <li><a href="#ai-integration-query-logging" id="toc-ai-integration-query-logging" class="nav-link" data-scroll-target="#ai-integration-query-logging">AI Integration &amp; Query Logging</a></li>
+  <li><a href="#data-engineering-performance" id="toc-data-engineering-performance" class="nav-link" data-scroll-target="#data-engineering-performance">Data Engineering &amp; Performance</a></li>
+  <li><a href="#automated-testing-suite" id="toc-automated-testing-suite" class="nav-link" data-scroll-target="#automated-testing-suite">Automated Testing Suite</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a>
   <ul class="collapse">
   <li><a href="#credit" id="toc-credit" class="nav-link" data-scroll-target="#credit">Credit</a></li>
   </ul></li>
@@ -318,8 +322,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bean and Brew</h1>
-<p class="subtitle lead">A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon</p>
+<h1 class="title">Vancouver Crime Watch</h1>
+<p class="subtitle lead">Interactive geospatial dashboard for visualizing crime patterns across Vancouver neighbourhoods</p>
 </div>
 
 
@@ -330,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 22, 2025</p>
+      <p class="date">March 15, 2026</p>
     </div>
   </div>
   
@@ -342,37 +346,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../img/projects/coffee_and_bean.jpg" class="img-fluid"></p>
-<section id="impact-results" class="level1">
-<h1>Impact &amp; Results</h1>
-<p>Our team was awarded Second Place for our ability to translate these statistical findings into actionable business recommendations.</p>
+<section id="demo" class="level1">
+<h1>Demo</h1>
+<p><img src="../img/dashboards/vancrimewatch_demo.gif" class="img-fluid"></p>
 </section>
-<section id="the-challenge" class="level1">
-<h1>The Challenge</h1>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>Choosing a location for a new business requires understanding local safety conditions. Using publicly available data from the <a href="https://geodash.vpd.ca/opendata/">Vancouver Police Department (2023–2025)</a>, this project aims to help prospective business owners assess local crime risks. We built a highly interactive, production-ready dashboard that combines geospatial visualizations with natural language querying.</p>
+<hr>
+</section>
+<section id="interactive-dashboard-geospatial-analysis" class="level1">
+<h1>Interactive Dashboard &amp; Geospatial Analysis</h1>
+<p>Built with <strong>Shiny for Python</strong>, the core dashboard provides users with an intuitive interface to filter crime incidents by year, neighbourhood, and offence type. Key features include:</p>
 <ul>
-<li>Analyze whether the current promotions work, and what other business strategies can we recommend to promote reusable cup usage.</li>
-<li>Trying to strike the balance between environmental protection and profit generation.</li>
+<li><p><strong>Interactive Map:</strong> A geospatial view of crime hotspots across the city.</p></li>
+<li><p><strong>Temporal Analysis:</strong> Monthly, weekly, and hourly trend tracking.</p></li>
+<li><p><strong>Reactive UI:</strong> Dynamic rendering that gracefully handles edge cases (like empty filter selections) with custom warning notifications.</p></li>
 </ul>
 </section>
-<section id="what-we-did" class="level1">
-<h1>What we did</h1>
+<section id="ai-integration-query-logging" class="level1">
+<h1>AI Integration &amp; Query Logging</h1>
+<p>To make the data more accessible, we engineered an <strong>AI Explorer</strong> tab powered by the <strong>Anthropic API</strong>.</p>
 <ul>
-<li><p><strong>Data set cleaning &amp; joining</strong>: calculated product profit from items, merged it to the sales dataset, added cup profit to finally get total profit per transaction</p></li>
-<li><p><strong>EDA</strong>: visualize financial and environmental performance before/after Nov 2023</p></li>
-<li><p><strong>Statistical analysis</strong>: z-test</p></li>
-<li><p><strong>Simple modeling</strong>: Logistic Regression</p></li>
+<li><p><strong>Natural Language Querying:</strong> Users can ask plain-English questions (e.g., “Show me theft crimes in Kitsilano in 2024”). The LLM translates informal names (“downtown” to “Central Business District”) into data filters.</p></li>
+<li><p><strong>MongoDB Telemetry:</strong> We implemented a MongoDB backend to log user queries and LLM responses. This allowed us to analyze search patterns, identify edge cases, and iteratively improve the LLM’s system instructions to better serve our target audience.</p></li>
 </ul>
+</section>
+<section id="data-engineering-performance" class="level1">
+<h1>Data Engineering &amp; Performance</h1>
+<p>To handle the large dataset efficiently without crashing the user’s browser, we implemented lazy loading techniques using <strong>Parquet</strong>, <strong>DuckDB</strong>, and <strong>Ibis</strong>. This ensured the dashboard remained highly responsive even when filtering thousands of geospatial data points.</p>
+</section>
+<section id="automated-testing-suite" class="level1">
+<h1>Automated Testing Suite</h1>
+<p>To ensure production-level reliability and prevent code regressions during collaborative development, I implemented a comprehensive testing pipeline:</p>
+<ul>
+<li><p><strong>Unit Testing (<code>pytest</code>):</strong> Isolated tests to verify the core Pandas data-filtering logic and boundary conditions.</p></li>
+<li><p><strong>UI Automation (<code>playwright</code>):</strong> Programmed a headless browser to verify initial dashboard states, filter interactivity, and asynchronous toast notifications.</p></li>
+</ul>
+<hr>
+</section>
+<section id="reflection" class="level1">
+<h1>Reflection</h1>
+<p>This project was an incredible deep dive into full-stack dashboard development. Beyond the technical implementation of LLMs and databases, it reinforced the importance of rigorous GitHub Flow workflows, single-focus pull requests, and the immense value of automated UI testing in a collaborative agile environment.</p>
 <section id="credit" class="level2">
 <h2 class="anchored" data-anchor-id="credit">Credit</h2>
-<p>Collaborator: Built with Jessie Liang.</p>
-<p><a href="https://github.com/jentsang/bean-and-brew">View Repository</a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_pres.jpg" class="img-fluid"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="../img/projects/coffee_and_bean_award.jpg" class="img-fluid"></p>
-</div>
-</div>
+<p>Collaborators: Built with Sarisha Das, Prabuddha Tamhane, and Nour Shawky.</p>
+<p><a href="https://jentsang-vancrimewatch.share.connect.posit.cloud/">View Live App</a> | <a href="https://github.com/UBC-MDS/DSCI-532_2026_4_VanCrimeWatch">View Repository</a></p>
 
 
 </section>

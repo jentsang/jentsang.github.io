@@ -11,6 +11,7 @@ website:
         href: index.qmd
       - about.qmd
       - projects.qmd
+      - dashboards.qmd
       - recipes.qmd
       - blog.qmd
     tools:

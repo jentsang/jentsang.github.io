@@ -1,0 +1,50 @@
+---
+title: "Vancouver Crime Watch"
+subtitle: "Interactive geospatial dashboard for visualizing crime patterns across Vancouver neighbourhoods"
+date: "2026-03-15"
+image: /img/dashboards/vancrimewatch.png
+---
+
+# Demo
+![](/img/dashboards/vancrimewatch_demo.gif)
+
+# Overview
+Choosing a location for a new business requires understanding local safety conditions. Using publicly available data from the [Vancouver Police Department (2023–2025)](https://geodash.vpd.ca/opendata/), this project aims to help prospective business owners assess local crime risks. We built a highly interactive, production-ready dashboard that combines geospatial visualizations with natural language querying.
+
+---
+
+# Interactive Dashboard & Geospatial Analysis
+Built with **Shiny for Python**, the core dashboard provides users with an intuitive interface to filter crime incidents by year, neighbourhood, and offence type. Key features include:
+
+* **Interactive Map:** A geospatial view of crime hotspots across the city.
+
+* **Temporal Analysis:** Monthly, weekly, and hourly trend tracking.
+
+* **Reactive UI:** Dynamic rendering that gracefully handles edge cases (like empty filter selections) with custom warning notifications.
+
+# AI Integration & Query Logging
+To make the data more accessible, we engineered an **AI Explorer** tab powered by the **Anthropic API**. 
+
+* **Natural Language Querying:** Users can ask plain-English questions (e.g., "Show me theft crimes in Kitsilano in 2024"). The LLM translates informal names ("downtown" to "Central Business District") into data filters.
+
+* **MongoDB Telemetry:** We implemented a MongoDB backend to log user queries and LLM responses. This allowed us to analyze search patterns, identify edge cases, and iteratively improve the LLM's system instructions to better serve our target audience.
+
+# Data Engineering & Performance
+To handle the large dataset efficiently without crashing the user's browser, we implemented lazy loading techniques using **Parquet**, **DuckDB**, and **Ibis**. This ensured the dashboard remained highly responsive even when filtering thousands of geospatial data points.
+
+# Automated Testing Suite
+To ensure production-level reliability and prevent code regressions during collaborative development, I implemented a comprehensive testing pipeline:
+
+* **Unit Testing (`pytest`):** Isolated tests to verify the core Pandas data-filtering logic and boundary conditions.
+
+* **UI Automation (`playwright`):** Programmed a headless browser to verify initial dashboard states, filter interactivity, and asynchronous toast notifications.
+
+---
+
+# Reflection
+This project was an incredible deep dive into full-stack dashboard development. Beyond the technical implementation of LLMs and databases, it reinforced the importance of rigorous GitHub Flow workflows, single-focus pull requests, and the immense value of automated UI testing in a collaborative agile environment.
+
+## Credit
+Collaborators: Built with Sarisha Das, Prabuddha Tamhane, and Nour Shawky.
+
+[View Live App](https://jentsang-vancrimewatch.share.connect.posit.cloud/) | [View Repository](https://github.com/UBC-MDS/DSCI-532_2026_4_VanCrimeWatch)
