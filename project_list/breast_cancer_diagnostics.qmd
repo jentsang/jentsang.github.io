@@ -1,0 +1,52 @@
+---
+title: "Breast Cancer Diagnostics"
+subtitle: "An Explainable AI ensemble for FNA-based screening using supervised and unsupervised learning"
+date: "2026-03-08"
+image: /img/dashboards/breast_cancer_diagnostics.png
+---
+
+# Demo
+![](/img/dashboards/breast_cancer_diagnostics_demo.gif)
+
+# Overview
+In clinical diagnostics, a "black-box" prediction isn't enough, clinicians need to know *why* an AI flagged a case as malignant. Developed during the **National Canadian Medical Datathon 2026**, this project aims to bridge the gap between machine learning and clinical intuition. We built a **Triple-Validation Ensemble** that provides a high-sensitivity diagnostic "second opinion" for breast cancer screenings.
+
+---
+
+# Triple-Validation Ensemble Logic
+Built with **Shiny for Python**, the core engine contains three distinct machine learning models to make predictions:
+
+* **Supervised Layer (XGBoost):** Optimized for **95% sensitivity (recall)** to prioritize the detection of malignant cases and minimize dangerous false negatives.
+
+* **Global Topology (GMM):** An unsupervised Gaussian Mixture Model that identifies the mathematical "territory" of Benign vs. Malignant morphology.
+
+* **Sub-type Clustering:** A specialized GMM that identifies morphological patterns within malignant cells, acting as an anomaly detector to flag atypical cases.
+
+# Explainable AI & Spatial Justification
+To move beyond simple probability scores, we implemented a **Spatial Second Opinion** feature to provide transparency for clinicians:
+
+* **Morphological Mapping:** Using **PCA** for dimensionality reduction, we project 30-dimensional cellular data onto a 2D topological map.
+
+* **Geometric Boundaries:** We utilized **Convex Hulls** to visualize the boundaries of known malignant sub-types. If a patient’s data point falls within these regions, the system provides a visual justification for the diagnosis.
+
+* **Ensemble Consensus Alerts:** Dynamic UI notifications that trigger "Critical" warnings when the supervised model and unsupervised maps disagree, highlighting edge cases for manual pathology review.
+
+# Interdisciplinary Collaboration
+This project was a deep dive into **Human-Centered AI**. By collaborating directly with **medical students** and a **Registered Nurse**, we iteratively refined the dashboard to align with real-world clinical workflows. Their feedback led us to prioritize morphological visualizations over raw metric tables, ensuring the tool provides actionable insights rather than just data.
+
+# Performance & Reliability
+To ensure the diagnostic hub is production-ready and mathematically sound:
+
+* **Strict Data Splitting:** Implemented a stratified sampling strategy to ensure the "Demo Cohort" remained entirely out-of-sample, preventing data leakage.
+
+* **Reproducible ML Pipelines:** Leveraged **Joblib** for serialized model deployment and **Scikit-learn** pipelines for consistent feature scaling and PCA transformations.
+
+---
+
+# Reflection
+This project was an incredible opportunity to apply machine learning to a high-stakes domain. It reinforced the importance of **Explainability (XAI)** in healthcare and demonstrated how unsupervised learning can act as a critical safety net for supervised models. Participating in this sprint over **International Women’s Day** weekend highlighted the impact data science can have on improving women's health outcomes.
+
+## Credit
+Collaborators: Built with medical students Abhinav Aggarwal, Kevin Dong, and William Lee, and Registered Nurse Lila Chan.
+
+[View Live App](https://jentsang-breast-cancer-diagnostic.share.connect.posit.cloud/) | [View Repository](https://github.com/jentsang/BreastCancerDiagnostic)
