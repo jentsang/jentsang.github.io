@@ -1,0 +1,54 @@
+---
+title: "Smart Amazon Product Query Assistant"
+subtitle: "Building a Hybrid RAG System with Llama 3.1 and FAISS"
+date: "2026-04-22"
+image: /img/projects/rag_dashboard.png
+---
+
+![RAG Assistant Demo](/img/projects/rag_demo.gif)
+
+### Overview
+Navigating thousands of product reviews can be overwhelming for hobbyists and makers. Using a subset of the [**Amazon 2023 Reviews Dataset**](https://amazon-reviews-2023.github.io/), this project focuses specifically on the **Arts and Crafts category**, encompassing over 16,000 unique products. I transformed this specialized dataset into an interactive AI shopping assistant using **Retrieval-Augmented Generation (RAG)**, allowing the system to answer nuanced questions about supplies, compatibility, and user experiences grounded in real-world review data.
+
+[**Live Demo on Posit Connect**](https://019db1db-e2bc-e6bc-39b5-089e24287c7b.share.connect.posit.cloud/)
+
+---
+
+### Technical Architecture
+
+#### 1. Optimized Storage & Hybrid Search
+To ensure high-speed performance, the processed dataset was stored in **Apache Parquet** format. This columnar storage choice allows for efficient metadata filtering and faster loading of the 16,000-product subset. 
+
+The retrieval engine utilizes a **Hybrid Search** approach:
+
+*   **Lexical (BM25):** Catching specific craft jargon and brand names.
+*   **Semantic (FAISS):** Understanding contextual intent via `sentence-transformers`.
+
+#### 2. The Retrieval Engine (Hybrid Search)
+To ensure the most relevant results, I implemented a dual-path retrieval strategy:
+
+*   **Lexical Search (BM25):** A keyword-based engine using a custom tokenizer to catch specific product names and technical craft terms.
+*   **Semantic Search (FAISS):** A dense vector database using `sentence-transformers` (`all-MiniLM-L6-v2`). This allows the system to understand *intent* (e.g., searching for "supplies for a 5-year-old" even if the word "supplies" isn't in the description).
+*   **Ensemble Approach:** The final system uses a **Hybrid Retriever**, combining both methods to balance keyword precision with contextual meaning.
+
+#### 3. The RAG Pipeline
+Using **LangChain** and the **Groq Llama-3.1-8b** model, I developed a generative pipeline that:
+
+*   **Context Grounding:** Passes the top-retrieved products/reviews into the LLM.
+*   **Hallucination Prevention:** Utilizes custom prompt engineering to force the model to rely strictly on the provided dataset and cite specific **ASINs** for transparency.
+*   **Summarization:** Synthesizes hundreds of words of review text into a concise, natural-language recommendation.
+
+![RAG Assistant Demo](/img/projects/rag_pipeline.png)
+
+#### 4. Deployment
+The application is built with **Streamlit** and deployed via **Posit Connect Cloud**. It features a dual-mode interface allowing users to switch between a traditional "Search" view and the "AI Assistant" RAG mode.
+
+---
+
+### Key Takeaways
+*   **Vector Databases:** Gained hands-on experience with FAISS for efficient high-dimensional similarity search.
+*   **Data Engineering:** Processed and joined large-scale Amazon metadata and review sets, handling missing values and mismatched keys through strategic joins.
+*   **Prompt Engineering:** Developed robust templates to ensure the LLM remains a "faithful" assistant to the data.
+
+**Collaborator:** Built with Nicole Link.
+[View Source Code on GitHub](https://github.com/UBC-MDS/DSCI_575_project_jt8919_nicolelink33)

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-22">
 
-<title>Projects</title>
+<title>Smart Amazon Product Query Assistant</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,29 +24,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3b7f4aff7acac744aa1d596ce5db2ede.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-6bd77949012616049cccce2f6cb6e61f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-3b7f4aff7acac744aa1d596ce5db2ede.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-bc185b5c5bdbcb35c2eb49d8a876ef70.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3b7f4aff7acac744aa1d596ce5db2ede.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6bd77949012616049cccce2f6cb6e61f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3b7f4aff7acac744aa1d596ce5db2ede.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,67 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -320,27 +261,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./dashboards.html"> 
+    <a class="nav-link" href="../dashboards.html"> 
 <span class="menu-text">Dashboards</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./recipes.html"> 
+    <a class="nav-link" href="../recipes.html"> 
 <span class="menu-text">Recipes</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -357,8 +298,16 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#technical-architecture" id="toc-technical-architecture" class="nav-link" data-scroll-target="#technical-architecture">Technical Architecture</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways">Key Takeaways</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -366,7 +315,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Smart Amazon Product Query Assistant</h1>
+<p class="subtitle lead">Building a Hybrid RAG System with Llama 3.1 and FAISS</p>
 </div>
 
 
@@ -374,6 +324,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 22, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -383,184 +339,72 @@ window.Quarto = {
 </header>
 
 
-<p>Jennifer is currently pursuing a Masters degree in Data Science at the University of British Columbia. Check out the projects she has worked on below!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/projects/rag_demo.gif" class="img-fluid figure-img"></p>
+<figcaption>RAG Assistant Demo</figcaption>
+</figure>
+</div>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>Navigating thousands of product reviews can be overwhelming for hobbyists and makers. Using a subset of the <a href="https://amazon-reviews-2023.github.io/"><strong>Amazon 2023 Reviews Dataset</strong></a>, this project focuses specifically on the <strong>Arts and Crafts category</strong>, encompassing over 16,000 unique products. I transformed this specialized dataset into an interactive AI shopping assistant using <strong>Retrieval-Augmented Generation (RAG)</strong>, allowing the system to answer nuanced questions about supplies, compatibility, and user experiences grounded in real-world review data.</p>
+<p><a href="https://019db1db-e2bc-e6bc-39b5-089e24287c7b.share.connect.posit.cloud/"><strong>Live Demo on Posit Connect</strong></a></p>
+<hr>
+</section>
+<section id="technical-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="technical-architecture">Technical Architecture</h3>
+<section id="optimized-storage-hybrid-search" class="level4">
+<h4 class="anchored" data-anchor-id="optimized-storage-hybrid-search">1. Optimized Storage &amp; Hybrid Search</h4>
+<p>To ensure high-speed performance, the processed dataset was stored in <strong>Apache Parquet</strong> format. This columnar storage choice allows for efficient metadata filtering and faster loading of the 16,000-product subset.</p>
+<p>The retrieval engine utilizes a <strong>Hybrid Search</strong> approach:</p>
+<ul>
+<li><strong>Lexical (BM25):</strong> Catching specific craft jargon and brand names.</li>
+<li><strong>Semantic (FAISS):</strong> Understanding contextual intent via <code>sentence-transformers</code>.</li>
+</ul>
+</section>
+<section id="the-retrieval-engine-hybrid-search" class="level4">
+<h4 class="anchored" data-anchor-id="the-retrieval-engine-hybrid-search">2. The Retrieval Engine (Hybrid Search)</h4>
+<p>To ensure the most relevant results, I implemented a dual-path retrieval strategy:</p>
+<ul>
+<li><strong>Lexical Search (BM25):</strong> A keyword-based engine using a custom tokenizer to catch specific product names and technical craft terms.</li>
+<li><strong>Semantic Search (FAISS):</strong> A dense vector database using <code>sentence-transformers</code> (<code>all-MiniLM-L6-v2</code>). This allows the system to understand <em>intent</em> (e.g., searching for “supplies for a 5-year-old” even if the word “supplies” isn’t in the description).</li>
+<li><strong>Ensemble Approach:</strong> The final system uses a <strong>Hybrid Retriever</strong>, combining both methods to balance keyword precision with contextual meaning.</li>
+</ul>
+</section>
+<section id="the-rag-pipeline" class="level4">
+<h4 class="anchored" data-anchor-id="the-rag-pipeline">3. The RAG Pipeline</h4>
+<p>Using <strong>LangChain</strong> and the <strong>Groq Llama-3.1-8b</strong> model, I developed a generative pipeline that:</p>
+<ul>
+<li><strong>Context Grounding:</strong> Passes the top-retrieved products/reviews into the LLM.</li>
+<li><strong>Hallucination Prevention:</strong> Utilizes custom prompt engineering to force the model to rely strictly on the provided dataset and cite specific <strong>ASINs</strong> for transparency.</li>
+<li><strong>Summarization:</strong> Synthesizes hundreds of words of review text into a concise, natural-language recommendation.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/projects/rag_pipeline.png" class="img-fluid figure-img"></p>
+<figcaption>RAG Assistant Demo</figcaption>
+</figure>
+</div>
+</section>
+<section id="deployment" class="level4">
+<h4 class="anchored" data-anchor-id="deployment">4. Deployment</h4>
+<p>The application is built with <strong>Streamlit</strong> and deployed via <strong>Posit Connect Cloud</strong>. It features a dual-mode interface allowing users to switch between a traditional “Search” view and the “AI Assistant” RAG mode.</p>
+<hr>
+</section>
+</section>
+<section id="key-takeaways" class="level3">
+<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
+<ul>
+<li><strong>Vector Databases:</strong> Gained hands-on experience with FAISS for efficient high-dimensional similarity search.</li>
+<li><strong>Data Engineering:</strong> Processed and joined large-scale Amazon metadata and review sets, handling missing values and mismatched keys through strategic joins.</li>
+<li><strong>Prompt Engineering:</strong> Developed robust templates to ensure the LLM remains a “faithful” assistant to the data.</li>
+</ul>
+<p><strong>Collaborator:</strong> Built with Nicole Link. <a href="https://github.com/UBC-MDS/DSCI_575_project_jt8919_nicolelink33">View Source Code on GitHub</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1776841200000" data-listing-file-modified-sort="1777249132842" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
-<a href="./project_list/amazon_search_rag.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/rag_dashboard.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Smart Amazon Product Query Assistant
-</h5>
-<div class="card-subtitle listing-subtitle">
-Building a Hybrid RAG System with Llama 3.1 and FAISS
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1773903600000" data-listing-file-modified-sort="1774054002204" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
-<a href="./project_list/relationship_botany.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/botany-cover.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Relationship Botany
-</h5>
-<div class="card-subtitle listing-subtitle">
-A Pixel-Art Personality Quiz Exploring Attachment Styles
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 19, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1772956800000" data-listing-file-modified-sort="1776223179763" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="416">
-<a href="./project_list/breast_cancer_diagnostics.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/dashboards/breast_cancer_diagnostics.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Breast Cancer Diagnostics
-</h5>
-<div class="card-subtitle listing-subtitle">
-An Explainable AI ensemble for FNA-based screening using supervised and unsupervised learning
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Mar 8, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1771660800000" data-listing-file-modified-sort="1774053253861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
-<a href="./project_list/flavour_network.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/flavour-network.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Culinary Cosmos
-</h5>
-<div class="card-subtitle listing-subtitle">
-Mapping The Flavor Bible into a 3D High-Dimensional Knowledge Graph
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 21, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1770710400000" data-listing-file-modified-sort="1774052518618" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="544">
-<a href="./project_list/movie_prediction.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/movie-prediction.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Predicting High Movie Ratings
-</h5>
-<div class="card-subtitle listing-subtitle">
-Feature Engineering and Binary Classification with XGBoost
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Feb 10, 2026
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-date-sort="1765526400000" data-listing-file-modified-sort="1766790325226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
-<a href="./project_list/credit-card-default-classfication.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/credit-card-default.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Predicting Credit Card Defaults
-</h5>
-<div class="card-subtitle listing-subtitle">
-Risk Assessment using Gradient Boosted Decision Trees and SHAP Interpretability
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Dec 12, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-date-sort="1765094400000" data-listing-file-modified-sort="1766790332177" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="99">
-<a href="./project_list/hotdog_predictor.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/food-truck-landing.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Hotdog Predictor
-</h5>
-<div class="card-subtitle listing-subtitle">
-Predicting hotdog vendors through NLP and classification
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Dec 7, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-date-sort="1763798400000" data-listing-file-modified-sort="1766790323226" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
-<a href="./project_list/bean_and_brew.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./img/projects/coffee_and_bean.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Bean and Brew
-</h5>
-<div class="card-subtitle listing-subtitle">
-A statistical analysis on sustainability &amp; profitability for a coffee shop submitted at the UBC WiDS hackathon
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Nov 22, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
